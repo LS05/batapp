@@ -1,16 +1,13 @@
 var batApp = angular.module('batapp', ['ionic'])
 
 batApp.controller('mainCtrl', function($scope) {
-  
+
 	//toggle nav menu thingy
 	//
+
 	$scope.openLeft = function() {
           $scope.sideMenuController.toggleLeft();
-     };
-
-
-
-
+  };
 
   $scope.tasks = [
     { title: 'Collect coins' },

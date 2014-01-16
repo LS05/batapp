@@ -19,6 +19,9 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
+    <feature name="Device">
+        <param name="ios-package" value="CDVDevice" />
+    </feature>
     <name>BATApp</name>
     <description>
 		A sample Apache Cordova application that responds to the deviceready event.
@@ -26,7 +29,7 @@
     <author email="dev@cordova.apache.org" href="http://cordova.io">
 		Apache Cordova Team
 	</author>
-    <content src="index.html" />
+    <content scroll="false" src="index.html" />
     <access origin="*" />
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
