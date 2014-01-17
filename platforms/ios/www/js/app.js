@@ -1,6 +1,13 @@
 var batApp = angular.module('batapp', ['ionic'])
 
-batApp.controller('mainCtrl', function($scope) {
+batApp.controller('mainCtrl', function($scope, $ionicPlatform) {
+
+  Platform = $ionicPlatform;
+
+  Platform.ready(function() {
+    // hide the status bar using the StatusBar plugin
+    StatusBar.hide();
+  });
 
 	//toggle nav menu thingy
 	//

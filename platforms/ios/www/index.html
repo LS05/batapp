@@ -28,18 +28,19 @@
             height: 100%;
         }
 
-        .row{
-            height: 25.5%;
-        }
-
         .col{
             width: 50%;
             font-family: 'Open Sans';
-            font-style: bold;
-            font-weight: 800;
             text-align: center;
-            font-size: 1.4em;
-            position: relative;
+        }
+
+        .mnitem button{
+            font-family: 'Open Sans';
+            font-style: bold;
+            font-size: 1.2em;
+            font-weight: 800 !important;
+            color: #fff !important;
+            line-height: 1.8;
         }
 
         #wrapper{
@@ -48,42 +49,95 @@
         }
 
         .mnitem{
+            /*background-color: #343c56;*/
             width: 150px;
-            height: 150px;
-            background-color: #343c56;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin: -75px 0 0 -75px;
-            line-height: 1.4;
+            margin: 0 auto;
         }
     </style>
+    <script>
+        document.addEventListener('deviceready', function() {
+            ionic.Platform.detect();
+        });
+  </script>
 </head>
 <body ng-app="batapp" ng-controller="mainCtrl">
     <pane id="wrapper">
-        <content has-header="false" scroll="false">
+        <content has-header="true" scroll="false" padded="true">
             <div class="row">
                 <div class="col">
-                    <div class="mnitem">Cultura</div>
+                    <div class="mnitem">
+                            <img src="img/cultura.svg">
+                            <p>Cultura</p>
+                    </div>
                 </div>
                 <div class="col">
                     <div class="mnitem">
-                        <button class="button button-clear button-block">Ambiente</button>
+                        <img src="img/ambiente.svg">
+                        <p>Ambiente</p>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col"><div class="mnitem">Imprenditoria Giovanile</div></div>
-                <div class="col"><div class="mnitem">Eventi</div></div>
+                <div class="col">
+                    <div class="mnitem">
+                        <img src="img/impgiov.svg">
+                        <p>Imprenditoria Giovanile</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mnitem">
+                        <img src="img/eventi.svg">
+                        <p>Eventi</p>
+                    </div>
+                </div>
             </div>
             <div class="row">
-                <div class="col"><div class="mnitem">Sport e<br />Tempo Libero</div></div>
-                <div class="col"><div class="mnitem">Curiosit&agrave;</div></div>
+                <div class="col">
+                    <div class="mnitem">
+                        <img src="img/impgiov.svg">
+                        <p>Imprenditoria Giovanile</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mnitem">
+                        <img src="img/eventi.svg">
+                        <p>Eventi</p>
+                    </div>
+                </div>
             </div>
             <div class="row">
-                <div class="col">menu7</div>
-                <div class="col">menu8</div>
+                <div class="col">
+                    <div class="mnitem">
+                        <img src="img/impgiov.svg">
+                        <p>Imprenditoria Giovanile</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mnitem">
+                        <img src="img/eventi.svg">
+                        <p>Eventi</p>
+                    </div>
+                </div>
             </div>
+            <!-- 
+                <div class="row">
+                    <div class="col">
+                        <div class="mnitem">
+                            <button class="button button-clear button-block">Sport e <br />Tempo Libero</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mnitem">
+                            <button class="button button-clear button-block">Curiosit&agrave;</button>
+                        </div>
+                    </div>
+                </div>
+                       
+                <div class="row">
+                    <div class="col">menu7</div>
+                    <div class="col">menu8</div>
+                </div> 
+            -->
         </content>
     </pane>
 <!--    <side-menus>

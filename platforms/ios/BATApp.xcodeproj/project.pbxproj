@@ -39,7 +39,8 @@
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
-		0813D61C935648DCB71236CE /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = AC55AC5AF653493D89445789 /* CDVDevice.m */; };
+		3586F2A0EAD34F4FB96DA590 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FB97D650383A463BBB51BCB0 /* CDVStatusBar.m */; };
+		56F895A0F54843D8B0E20C39 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 803918B84E29419DAD65D07C /* CDVDevice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,8 +102,10 @@
 		8D1107310486CEB800E47090 /* BATApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "BATApp-Info.plist"; path = "../BATApp-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "BATApp/config.xml"; sourceTree = "<group>"; };
-		AC55AC5AF653493D89445789 /* CDVDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVDevice.m"; path = "org.apache.cordova.device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		3C8856CA49104AFA8C7AF222 /* CDVDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVDevice.h"; path = "org.apache.cordova.device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		FB97D650383A463BBB51BCB0 /* CDVStatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVStatusBar.m"; path = "org.apache.cordova.statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		1C9E3702D3CD4C08B802980B /* CDVStatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVStatusBar.h"; path = "org.apache.cordova.statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		803918B84E29419DAD65D07C /* CDVDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVDevice.m"; path = "org.apache.cordova.device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		0BF9D5B69D474A1A9FF4FCB0 /* CDVDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVDevice.h"; path = "org.apache.cordova.device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,8 +224,10 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				AC55AC5AF653493D89445789 /* CDVDevice.m */,
-				3C8856CA49104AFA8C7AF222 /* CDVDevice.h */,
+				FB97D650383A463BBB51BCB0 /* CDVStatusBar.m */,
+				1C9E3702D3CD4C08B802980B /* CDVStatusBar.h */,
+				803918B84E29419DAD65D07C /* CDVDevice.m */,
+				0BF9D5B69D474A1A9FF4FCB0 /* CDVDevice.h */,
 			);
 			name = Plugins;
 			path = "BATApp/Plugins";
@@ -408,7 +413,8 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				0813D61C935648DCB71236CE /* CDVDevice.m in Sources */,
+				3586F2A0EAD34F4FB96DA590 /* CDVStatusBar.m in Sources */,
+				56F895A0F54843D8B0E20C39 /* CDVDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
