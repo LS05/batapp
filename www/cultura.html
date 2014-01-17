@@ -28,50 +28,95 @@
             height: 100%;
         }
 
-        .row{
-            height: 25.5%;
-        }
-
-        .col{
-            width: 50%;
+        #listacomuni{
             font-family: 'Open Sans';
             font-style: bold;
-            font-weight: 800;
-            text-align: center;
+            font-weight: 800 !important;
+            color: #fff !important;
+            line-height: 1.8;
         }
 
-        .pane{
+        #listacomuni .item{
+            color: #fff;
+            background: none;
+            text-align: center;
+            border: none;
+        }
+
+        #listacomuni .item a{
+            background: none;
+            font-size: 2.2em;
+            font-weight: 800;
+        }
+
+        #wrapper{
             background-color: #e74c3c;
             color: #fff;
         }
+
+        .mnitem{
+            /*background-color: #343c56;*/
+            width: 150px;
+            margin: 0 auto;
+        }
+
+        #seztitle{
+            font-weight: 100;
+            font-size: 5em;
+            color: #fff;
+            text-align: center;
+            padding: 15px 40px;
+        }
     </style>
 </head>
-
-
 <body ng-app="batapp" ng-controller="mainCtrl">
-    <side-menus>
-
-    <!-- Center content -->
-    <pane side-menu-content>
-        <header class="bar bar-header bar-dark">
-            <button class="button button-icon" ng-click="openLeft()"><i class="icon ion-navicon"></i></button>
-            <h1 class="title">BatApp</h1>
-        </header>
-        <content has-header="true" scroll="false">
-            <div class="row">
-                <div class="col">Cultura</div>
-                <div class="col">Ambiente</div>
-            </div>
+    <pane id="wrapper">
+        <h1 id="seztitle">Cultura</h1>
+        <content has-header="true" padded="true">
+            <list id="listacomuni">
+                <item ng-repeat="comune in comuni">
+                    {{comune.title}}
+                </item>
+            </list>
         </content>
     </pane>
+<!--    <side-menus>
 
-    <!-- Left menu -->
-    <side-menu side="left">
-    <header class="bar bar-header bar-dark">
-        <h1 class="title">Projects</h1>
-    </header>
-</side-menu>
+        
+        <pane side-menu-content>
+            <!--<header class="bar bar-header bar-dark">
+                <button class="button button-icon" ng-click="openLeft()"><i class="icon ion-navicon"></i></button>
+                <h1 class="title">BatApp</h1>
+            </header>
+            <content has-header="false" scroll="false">
+                <div class="row">
+                    <div class="col">
+                        <div class="mnitem">Cultura</div>
+                    </div>
+                    <div class="col"><div class="mnitem">Ambiente</div></div>
+                </div>
+                <div class="row">
+                    <div class="col"><div class="mnitem">Imprenditoria Giovanile</div></div>
+                    <div class="col"><div class="mnitem">Eventi</div></div>
+                </div>
+                <div class="row">
+                    <div class="col">menu5</div>
+                    <div class="col">menu6</div>
+                </div>
+                <div class="row">
+                    <div class="col">menu7</div>
+                    <div class="col">menu8</div>
+                </div>
+            </content>
+        </pane>
 
-</side-menus>
+        Left menu 
+        <side-menu side="left">
+            <header class="bar bar-header bar-dark">
+                <h1 class="title">Projects</h1>
+            </header>
+        </side-menu>
+
+    </side-menus>-->
 </body>
 </html>

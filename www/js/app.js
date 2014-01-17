@@ -1,6 +1,6 @@
-var batApp = angular.module('batapp', ['ionic'])
+var batApp = angular.module('batapp', ['ionic']);
 
-batApp.controller('mainCtrl', function($scope, $ionicPlatform) {
+batApp.controller('mainCtrl', function($scope, $location, $ionicPlatform) {
 
   Platform = $ionicPlatform;
 
@@ -13,13 +13,14 @@ batApp.controller('mainCtrl', function($scope, $ionicPlatform) {
 	//
 
 	$scope.openLeft = function() {
-          $scope.sideMenuController.toggleLeft();
+      $scope.sideMenuController.toggleLeft();
   };
 
-  $scope.tasks = [
-    { title: 'Collect coins' },
-    { title: 'Eat mushrooms' },
-    { title: 'Get high enough to grab the flag' },
-    { title: 'Find the Princess' }
+  $scope.comuni = [
+    { title: 'Andria' },
+    { title: 'Barletta' },
+    { title: 'Trani' },
+    { title: 'Canosa' }
   ];
+
 });

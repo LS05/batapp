@@ -261,3 +261,39 @@ Terminating in response to SpringBoard's termination.
 2014-01-17 02:37:23.921 BATApp[35166:a0b] [CDVTimer][TotalPluginStartup] 315.293968ms
 2014-01-17 02:37:24.231 BATApp[35166:a0b] Resetting plugins due to page load.
 2014-01-17 02:37:25.447 BATApp[35166:a0b] Finished load of: file:///Users/lucasuriano/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/2613E792-AB64-444E-9B09-AA279C640646/BATApp.app/www/index.html
+2014-01-17 02:42:15.483 BATApp[35806:c07] Multi-tasking -> Device: YES, App: YES
+2014-01-17 02:42:15.524 BATApp[35806:c07] Unlimited access to network resources
+2014-01-17 02:42:16.098 BATApp[35806:c07] [CDVTimer][statusbar] 192.521989ms
+2014-01-17 02:42:16.098 BATApp[35806:c07] [CDVTimer][TotalPluginStartup] 193.153977ms
+2014-01-17 02:42:16.151 BATApp[35806:c07] Resetting plugins due to page load.
+2014-01-17 02:42:17.041 BATApp[35806:c07] Finished load of: file:///Users/lucasuriano/Library/Application%20Support/iPhone%20Simulator/6.0/Applications/E3700D6E-ED91-4018-87DE-CB89B78E2122/BATApp.app/www/index.html
+2014-01-17 15:34:19.478 BATApp[3109:a0b] Multi-tasking -> Device: YES, App: YES
+2014-01-17 15:34:19.729 BATApp[3109:a0b] Unlimited access to network resources
+2014-01-17 15:34:22.274 BATApp[3109:a0b] [CDVTimer][statusbar] 266.306996ms
+2014-01-17 15:34:22.274 BATApp[3109:a0b] [CDVTimer][TotalPluginStartup] 266.912997ms
+2014-01-17 15:34:22.497 BATApp[3109:a0b] Resetting plugins due to page load.
+2014-01-17 15:34:25.419 BATApp[3109:a0b] Finished load of: file:///Users/lucasuriano/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/2613E792-AB64-444E-9B09-AA279C640646/BATApp.app/www/index.html
+2014-01-17 16:36:58.951 BATApp[4098:a0b] Multi-tasking -> Device: YES, App: YES
+2014-01-17 16:36:59.188 BATApp[4098:a0b] Unlimited access to network resources
+2014-01-17 16:37:00.064 BATApp[4098:a0b] [CDVTimer][statusbar] 271.964014ms
+2014-01-17 16:37:00.066 BATApp[4098:a0b] [CDVTimer][TotalPluginStartup] 273.943007ms
+2014-01-17 16:37:01.314 BATApp[4098:a0b] Resetting plugins due to page load.
+2014-01-17 16:37:05.655 BATApp[4098:a0b] Finished load of: file:///Users/lucasuriano/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/2613E792-AB64-444E-9B09-AA279C640646/BATApp.app/www/index.html
+2014-01-17 16:38:50.346 BATApp[5013:a0b] Multi-tasking -> Device: YES, App: YES
+2014-01-17 16:38:50.367 BATApp[5013:a0b] Unlimited access to network resources
+2014-01-17 16:38:50.437 BATApp[5013:a0b] [CDVTimer][statusbar] 15.633047ms
+2014-01-17 16:38:50.438 BATApp[5013:a0b] [CDVTimer][TotalPluginStartup] 16.604006ms
+2014-01-17 16:38:50.798 BATApp[5013:a0b] Resetting plugins due to page load.
+2014-01-17 16:38:52.006 BATApp[5013:a0b] Finished load of: file:///Users/lucasuriano/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/2613E792-AB64-444E-9B09-AA279C640646/BATApp.app/www/index.html
+2014-01-17 16:39:59.988 BATApp[5491:a0b] Multi-tasking -> Device: YES, App: YES
+2014-01-17 16:40:00.003 BATApp[5491:a0b] Unlimited access to network resources
+2014-01-17 16:40:00.080 BATApp[5491:a0b] [CDVTimer][statusbar] 20.900965ms
+2014-01-17 16:40:00.087 BATApp[5491:a0b] [CDVTimer][TotalPluginStartup] 27.343035ms
+2014-01-17 16:40:00.542 BATApp[5491:a0b] Resetting plugins due to page load.
+2014-01-17 16:40:01.788 BATApp[5491:a0b] Finished load of: file:///Users/lucasuriano/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/2613E792-AB64-444E-9B09-AA279C640646/BATApp.app/www/index.html
+2014-01-17 16:41:36.034 BATApp[6397:a0b] Multi-tasking -> Device: YES, App: YES
+2014-01-17 16:41:36.048 BATApp[6397:a0b] Unlimited access to network resources
+2014-01-17 16:41:36.124 BATApp[6397:a0b] [CDVTimer][statusbar] 17.086983ms
+2014-01-17 16:41:36.125 BATApp[6397:a0b] [CDVTimer][TotalPluginStartup] 18.303990ms
+2014-01-17 16:41:36.514 BATApp[6397:a0b] Resetting plugins due to page load.
+2014-01-17 16:41:37.340 BATApp[6397:a0b] Finished load of: file:///Users/lucasuriano/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/2613E792-AB64-444E-9B09-AA279C640646/BATApp.app/www/index.html
