@@ -1,0 +1,115 @@
+.scroll{
+    width: 100%;
+    height: 100%;
+}
+
+#listacomuni, #listaassociazioni{
+    font-family: 'Open Sans';
+    font-style: bold;
+    font-weight: 800 !important;
+    color: #fff !important;
+    line-height: 1.8;
+}
+
+#listacomuni .item, #listaassociazioni .item{
+    color: #fff;
+    background: none;
+    text-align: center;
+    border: none;
+}
+
+#listaassociazioni .item{
+    text-align: left;
+}
+
+#listacomuni .item a, #listaassociazioni .item a{
+    background: none;
+    font-size: 2.2em;
+    font-weight: 800;
+    color: #fff;
+}
+
+#wrapper{
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+#wrapcultura{
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+#wrapambiente{
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+#wrapimpgiov{
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+#wrapeventi{
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.mnitem{
+    /*background-color: #343c56;*/
+    width: 150px;
+    margin: 0 auto;
+}
+
+#seztitle{
+    font-weight: 100;
+    font-size: 5em;
+    color: #fff;
+    text-align: center;
+    padding: 15px 40px;
+}
+
+#comune h1{
+    font-weight: 100;
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+}
+
+#listaassociazioni .item{
+    border: 1px solid #c73526;
+    border-left: none;
+    border-right: none;
+}
+
+#listaassociazioni .item p.nome{
+    font-weight: 400;
+    font-size: .6em;
+    color: #fff;
+    margin-bottom: 2px;
+}
+
+#listaassociazioni .item p.posiz{
+    font-weight: 600;
+    color: #791307;
+    font-size: .5em;
+}
+
+.posiz .ion-location{
+    margin-right: 5px;
+}
+
+.mnitem{
+    width: 150px;
+    margin: 0 auto;
+}
+
+.col{
+    width: 50%;
+    font-family: 'Open Sans';
+    text-align: center;
+}
+
+#homewrapper{
+    background-color: #1c242d;
+    color: #fff;
+}

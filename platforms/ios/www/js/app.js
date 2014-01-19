@@ -1,6 +1,29 @@
-var batApp = angular.module('batapp', ['ionic']);
+var batApp = angular.module('batapp', ['ionic', 'ngRoute']);
 
-batApp.controller('mainCtrl', function($scope, $location, $ionicPlatform) {
+batApp.config(['$routeProvider',
+  function($routeProvider) {
+    $routeProvider.
+      when('/cultura', {
+        templateUrl: '/cultura.html',
+        controller: 'CulturaController'
+      }).
+      when('/associazioni', {
+        templateUrl: '/listaassociazioni.html',
+        controller: 'CulturaController'
+      }).
+      when('/', {
+        templateUrl: '/main.html',
+        controller: 'mainCtrl'
+      })
+  }]);
+
+
+batApp.controller('CulturaController', function($scope) {
+    // create a message to display in our view
+    $scope.message = 'Everyone come and see how good I look!';
+});
+
+batApp.controller('mainCtrl', function($scope, $ionicPlatform) {
 
   Platform = $ionicPlatform;
 
@@ -20,7 +43,52 @@ batApp.controller('mainCtrl', function($scope, $location, $ionicPlatform) {
     { title: 'Andria' },
     { title: 'Barletta' },
     { title: 'Trani' },
-    { title: 'Canosa' }
+    { title: 'Canosa' },
+    { title: 'Margherita' },
+    { title: 'Ginosa' }
+  ];
+
+  $scope.associazioni = [
+    { 
+      nome: 'Associazione Modellistica Castel del Monte',
+      posizione: 'Via Castel del Monte, 80'
+    },
+    { 
+      nome: 'Associazione Modellistica Castel del Monte',
+      posizione: 'Via Castel del Monte, 80'
+    },
+    { 
+      nome: 'Associazione Modellistica Castel del Monte',
+      posizione: 'Via Castel del Monte, 80'
+    },
+    { 
+      nome: 'Associazione Modellistica Castel del Monte',
+      posizione: 'Via Castel del Monte, 80'
+    },
+    { 
+      nome: 'Associazione Modellistica Castel del Monte',
+      posizione: 'Via Castel del Monte, 80'
+    },
+    { 
+      nome: 'Associazione Modellistica Castel del Monte',
+      posizione: 'Via Castel del Monte, 80'
+    },
+    { 
+      nome: 'Associazione Modellistica Castel del Monte',
+      posizione: 'Via Castel del Monte, 80'
+    },
+    { 
+      nome: 'Associazione Modellistica Castel del Monte',
+      posizione: 'Via Castel del Monte, 80'
+    },
+    { 
+      nome: 'Associazione Modellistica Castel del Monte',
+      posizione: 'Via Castel del Monte, 80'
+    },
+    { 
+      nome: 'Associazione Modellistica Castel del Monte',
+      posizione: 'Via Castel del Monte, 80'
+    }
   ];
 
 });
