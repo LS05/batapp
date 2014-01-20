@@ -7,6 +7,14 @@ batApp.config(['$routeProvider',
         templateUrl: '/cultura.html',
         controller: 'CulturaController'
       }).
+      when('/ambiente', {
+        templateUrl: '/ambiente.html',
+        controller: 'AmbienteController'
+      }).
+      when('/impgiov', {
+        templateUrl: '/impgiov.html',
+        controller: 'ImpGiovController'
+      }).
       when('/associazioni', {
         templateUrl: '/listaassociazioni.html',
         controller: 'CulturaController'
@@ -17,6 +25,15 @@ batApp.config(['$routeProvider',
       })
   }]);
 
+batApp.controller('ImpGiovController', function($scope) {
+    // create a message to display in our view
+    $scope.message = 'Everyone come and see how good I look!';
+});
+
+batApp.controller('AmbienteController', function($scope) {
+    // create a message to display in our view
+    $scope.message = 'Everyone come and see how good I look!';
+});
 
 batApp.controller('CulturaController', function($scope) {
     // create a message to display in our view
