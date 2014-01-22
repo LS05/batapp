@@ -11,7 +11,7 @@ batApp.config(['$routeProvider',
         templateUrl: '/listaassociazioni.html',
         controller: 'ListaComController'
       }).
-      when('/sezassoc/:sezione/:comune/:associazione', {
+      when('/sezassoc/:sezione/:comune/:associazione/:idass', {
         templateUrl: '/associazione.html',
         controller: 'AssociazioneController'
       }).
@@ -37,7 +37,6 @@ batApp.filter('lwnowhitespace', function() {
    }
 });
 
-
 batApp.controller('SezioneController', function($scope, $routeParams) {
     $scope.sezione = $routeParams.sezione;
     if( $scope.sezione == 'imprenditoriagiovanile' )
@@ -47,45 +46,14 @@ batApp.controller('SezioneController', function($scope, $routeParams) {
 batApp.controller('ListaComController', function($scope, $routeParams) {
     $scope.comune = $routeParams.comune;
     $scope.sezione = $routeParams.sezione;
-    console.log($scope);
 });
 
 batApp.controller('AssociazioneController', function($scope, $routeParams) {
-    $scope.comune = $routeParams.comune;
     $scope.sezione = $routeParams.sezione;
-    console.log($scope);
-});
-
-batApp.controller('ListaCultController', function($scope, $routeParams) {
     $scope.comune = $routeParams.comune;
-    $scope.sezione = 'wrapcultura';
+    $scope.associazione = $routeParams.associazione;
+    $scope.idass = $routeParams.idass;
     console.log($scope);
-});
-
-batApp.controller('ListaAmbController', function($scope, $routeParams) {
-    $scope.comune = $routeParams.comune;
-    $scope.sezione = 'wrapambiente';
-});
-
-batApp.controller('ImpGiovController', function($scope) {
-    // create a message to display in our view
-    $scope.message = 'Everyone come and see how good I look!';
-});
-
-batApp.controller('ListaImpGiovController', function($scope, $routeParams) {
-    $scope.comune = $routeParams.comune;
-    $scope.sezione = 'wrapimpgiov';
-    console.log($scope);
-});
-
-batApp.controller('AmbienteController', function($scope) {
-    // create a message to display in our view
-    $scope.message = 'Everyone come and see how good I look!';
-});
-
-batApp.controller('CulturaController', function($scope) {
-    // create a message to display in our view
-    $scope.message = 'Everyone come and see how good I look!';
 });
 
 batApp.controller('mainCtrl', function($scope, $ionicPlatform) {
@@ -115,44 +83,14 @@ batApp.controller('mainCtrl', function($scope, $ionicPlatform) {
 
   $scope.associazioni = [
     { 
+      id: '1',
       nome: 'Associazione Modellistica Castel del Monte',
       posizione: 'Via Castel del Monte, 80'
     },
     { 
-      nome: 'Associazione Modellistica Castel del Monte',
-      posizione: 'Via Castel del Monte, 80'
-    },
-    { 
-      nome: 'Associazione Modellistica Castel del Monte',
-      posizione: 'Via Castel del Monte, 80'
-    },
-    { 
-      nome: 'Associazione Modellistica Castel del Monte',
-      posizione: 'Via Castel del Monte, 80'
-    },
-    { 
-      nome: 'Associazione Modellistica Castel del Monte',
-      posizione: 'Via Castel del Monte, 80'
-    },
-    { 
-      nome: 'Associazione Modellistica Castel del Monte',
-      posizione: 'Via Castel del Monte, 80'
-    },
-    { 
-      nome: 'Associazione Modellistica Castel del Monte',
-      posizione: 'Via Castel del Monte, 80'
-    },
-    { 
-      nome: 'Associazione Modellistica Castel del Monte',
-      posizione: 'Via Castel del Monte, 80'
-    },
-    { 
-      nome: 'Associazione Modellistica Castel del Monte',
-      posizione: 'Via Castel del Monte, 80'
-    },
-    { 
-      nome: 'Associazione Modellistica Castel del Monte',
-      posizione: 'Via Castel del Monte, 80'
+      id: '2',
+      nome: 'Associazione Via Trani',
+      posizione: 'Via Trani, 54'
     }
   ];
 

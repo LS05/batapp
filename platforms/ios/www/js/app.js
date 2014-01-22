@@ -3,21 +3,17 @@ var batApp = angular.module('batapp', ['ionic', 'ngRoute']);
 batApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when('/cultura', {
-        templateUrl: '/cultura.html',
-        controller: 'CulturaController'
+      when('/sezassoc/:sezione', {
+        templateUrl: '/sezione.html',
+        controller: 'SezioneController'
       }).
-      when('/ambiente', {
-        templateUrl: '/ambiente.html',
-        controller: 'AmbienteController'
-      }).
-      when('/impgiov', {
-        templateUrl: '/impgiov.html',
-        controller: 'ImpGiovController'
-      }).
-      when('/associazioni', {
+      when('/sezassoc/:sezione/:comune', {
         templateUrl: '/listaassociazioni.html',
-        controller: 'CulturaController'
+        controller: 'ListaComController'
+      }).
+      when('/sezassoc/:sezione/:comune/:associazione/:idass', {
+        templateUrl: '/associazione.html',
+        controller: 'AssociazioneController'
       }).
       when('/', {
         templateUrl: '/main.html',
@@ -25,19 +21,39 @@ batApp.config(['$routeProvider',
       })
   }]);
 
-batApp.controller('ImpGiovController', function($scope) {
-    // create a message to display in our view
-    $scope.message = 'Everyone come and see how good I look!';
+batApp.filter('capitalize', function() {
+   return function(input, scope) {
+            if (input!=null)
+              input = input.toLowerCase();
+            return input.substring(0,1).toUpperCase()+input.substring(1);
+   }
 });
 
-batApp.controller('AmbienteController', function($scope) {
-    // create a message to display in our view
-    $scope.message = 'Everyone come and see how good I look!';
+batApp.filter('lwnowhitespace', function() {
+   return function(input, scope) {
+            if (input != null)
+              input = input.toLowerCase().replace(/ /g, '');
+            return input;
+   }
 });
 
-batApp.controller('CulturaController', function($scope) {
-    // create a message to display in our view
-    $scope.message = 'Everyone come and see how good I look!';
+batApp.controller('SezioneController', function($scope, $routeParams) {
+    $scope.sezione = $routeParams.sezione;
+    if( $scope.sezione == 'imprenditoriagiovanile' )
+      $scope.impgiov = 'Imprenditoria Giovanile';
+});
+
+batApp.controller('ListaComController', function($scope, $routeParams) {
+    $scope.comune = $routeParams.comune;
+    $scope.sezione = $routeParams.sezione;
+});
+
+batApp.controller('AssociazioneController', function($scope, $routeParams) {
+    $scope.sezione = $routeParams.sezione;
+    $scope.comune = $routeParams.comune;
+    $scope.associazione = $routeParams.associazione;
+    $scope.idass = $routeParams.idass;
+    console.log($scope);
 });
 
 batApp.controller('mainCtrl', function($scope, $ionicPlatform) {
@@ -67,44 +83,14 @@ batApp.controller('mainCtrl', function($scope, $ionicPlatform) {
 
   $scope.associazioni = [
     { 
+      id: '1',
       nome: 'Associazione Modellistica Castel del Monte',
       posizione: 'Via Castel del Monte, 80'
     },
     { 
-      nome: 'Associazione Modellistica Castel del Monte',
-      posizione: 'Via Castel del Monte, 80'
-    },
-    { 
-      nome: 'Associazione Modellistica Castel del Monte',
-      posizione: 'Via Castel del Monte, 80'
-    },
-    { 
-      nome: 'Associazione Modellistica Castel del Monte',
-      posizione: 'Via Castel del Monte, 80'
-    },
-    { 
-      nome: 'Associazione Modellistica Castel del Monte',
-      posizione: 'Via Castel del Monte, 80'
-    },
-    { 
-      nome: 'Associazione Modellistica Castel del Monte',
-      posizione: 'Via Castel del Monte, 80'
-    },
-    { 
-      nome: 'Associazione Modellistica Castel del Monte',
-      posizione: 'Via Castel del Monte, 80'
-    },
-    { 
-      nome: 'Associazione Modellistica Castel del Monte',
-      posizione: 'Via Castel del Monte, 80'
-    },
-    { 
-      nome: 'Associazione Modellistica Castel del Monte',
-      posizione: 'Via Castel del Monte, 80'
-    },
-    { 
-      nome: 'Associazione Modellistica Castel del Monte',
-      posizione: 'Via Castel del Monte, 80'
+      id: '2',
+      nome: 'Associazione Via Trani',
+      posizione: 'Via Trani, 54'
     }
   ];
 

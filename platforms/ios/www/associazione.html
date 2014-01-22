@@ -1,0 +1,24 @@
+<pane id="wrap{{sezione}}">
+    <content has-header="false" padded="false" scroll="false">
+        <div id="map"></div>
+        <div><h1 id="asstitle">{{associazione}}</h1></div>
+        <div class="row">
+            <div class="col" id="btninfo">
+                <a 
+                    ng-href="#/sezassoc/{{sezione}}/{{comune}}/{{associazione}}/{{idass}}/info"
+                    class="btnass btninfo"
+                >
+                    <i class="ion-plus-round"></i><p>Info</p>
+                </a>
+            </div>
+            <div class="col" id="btneventi">
+                <a 
+                    ng-href="#/sezassoc/{{sezione}}/{{comune}}/{{associazione}}/{{idass}}/eventi"
+                    class="btnass btneventi"
+                >
+                    <i class="ion-calendar"></i><p>Eventi</p>
+                </a>
+            </div>
+        </div>
+    </content>
+</pane>

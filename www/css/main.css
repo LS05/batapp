@@ -56,12 +56,6 @@
     color: #fff;
 }
 
-.mnitem{
-    /*background-color: #343c56;*/
-    width: 150px;
-    margin: 0 auto;
-}
-
 #seztitle{
     font-weight: 100;
     font-size: 5em;
@@ -103,6 +97,13 @@
 .mnitem{
     width: 150px;
     margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.mnitem a{
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
 }
 
 .col{
@@ -114,4 +115,51 @@
 #homewrapper{
     background-color: #1c242d;
     color: #fff;
+}
+
+#asstitle{
+    font-family: 'Open Sans';
+    font-size: 2em;
+    font-weight: 400;
+    color: #fff !important;
+    text-align: center;
+}
+
+#btninfo{
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+#btneventi{
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.btnass{
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btnass i{
+    background-color: #fff;
+    width: 60px;
+    font-size: 1.5em;
+    line-height: 60px;
+    border-radius: 60px;
+    margin: 0 auto 10px auto;
+
+}
+
+#wrapimprenditoriagiovanile .btnass i{
+    color: #3a97d3;
+}
+
+#wrapcultura .btnass i{
+    color: #e74c3c;
+}
+
+#wrapambiente .btnass i{
+    color: #23ae5f;
 }
