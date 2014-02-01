@@ -5,40 +5,72 @@
             the location of your file `my_css.css` */ 
 }
 
+@font-face {
+    font-family: "Open Sans Bold";
+    src: url("../fonts/OpenSans-Bold.ttf") format("opentype");   
+        /* Make sure you defined the correct path, which is related to
+            the location of your file `my_css.css` */ 
+}
+
+#mainhead button{
+    border: none;
+    font-size: 2em;
+    background: none;
+}
+
+#back{
+    font-size: 2em;
+    line-height: 31px;
+    top: 5px;
+    left: 10px;
+}
+
 .scroll{
     width: 100%;
     height: 100%;
 }
 
-#listacomuni, #listaassociazioni{
+#listacomuni, .list{
     font-family: 'Open Sans';
-    font-style: bold;
-    font-weight: 800 !important;
     color: #fff !important;
     line-height: 1.8;
 }
 
-#listacomuni .item, #listaassociazioni .item{
+#listacomuni li{
     color: #fff;
     background: none;
     text-align: center;
     border: none;
+    margin-top: 20px;
 }
 
-#listaassociazioni .item{
-    text-align: left;
-}
-
-#listacomuni .item a, #listaassociazioni .item a{
+#listacomuni li a{
+    font-family: 'Open Sans Bold';
     background: none;
     font-size: 2.2em;
-    font-weight: 800;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+#wrapcultura .scroll{
+    padding-bottom: 150px;
+}
+
+#wrapcultura, #wrapcultura .buttonwrap{
+    background-color: #e74c3c;
     color: #fff;
 }
 
-#wrapcultura{
-    background-color: #e74c3c;
-    color: #fff;
+#wrapcultura .buttonwrap{
+    height: 50px;
+    position: relative;
+    z-index: 9999;
+}
+
+#wrapcultura .list li{
+    border: 1px solid #cd3627;
+    border-top: none;
 }
 
 #wrapambiente{
@@ -46,13 +78,39 @@
     color: #fff;
 }
 
-#wrapimprenditoriagiovanile{
+#wrapimprenditoriagiovanile, #wrapimprenditoriagiovanile #comune{
     background-color: #3a97d3;
     color: #fff;
 }
 
+#wrapimprenditoriagiovanile #listaassociazioni li{
+    border: 1px solid #074b77;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+} 
+
+#wrapimprenditoriagiovanile #listaassociazioni .posiz{
+    color:#074b77;
+}
+
+#wrapambiente #comune{
+    background-color:#23ae5f;
+}
+
+#wrapambiente #listaassociazioni li{
+    border:1px solid #0e6f38;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+#wrapambiente #listaassociazioni .posiz{
+    color:#064f25;
+}
+
 #wrapeventi{
-    background-color: #e74c3c;
+    background-color: #f29c1f;
     color: #fff;
 }
 
@@ -64,34 +122,61 @@
     padding: 15px 40px;
 }
 
+#comune{
+    background-color: #e74c3c;
+    position: relative;
+    z-index: 1000;
+    padding-bottom: 5px;
+    height: 120px;
+}
+
 #comune h1{
     font-weight: 100;
     color: #fff;
-    font-size: 3em;
+    font-size: 3.5em;
     text-align: center;
+    margin: 0px;
+    padding-top: 50px;
 }
 
-#listaassociazioni .item{
-    border: 1px solid #c73526;
+.list li{
+    border: 1px solid #e28518;
     border-left: none;
     border-right: none;
+    border-top: none;
 }
 
-#listaassociazioni .item p.nome{
-    font-weight: 400;
-    font-size: .6em;
+.list li a{
+    font-size: 1.2em;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.list li .nome{
+    font-family: 'Open Sans';
     color: #fff;
     margin-bottom: 2px;
+    font-weight: 600;
 }
 
-#listaassociazioni .item p.posiz{
+.list li .posiz{
     font-weight: 600;
     color: #791307;
-    font-size: .5em;
 }
 
 .posiz .ion-location{
     margin-right: 5px;
+}
+
+.list .time{
+    color: #791307;
+    font-weight: 600;
+    display: block;
+}
+
+.list .time i{
+    margin-right: 3px;
 }
 
 .mnitem{
@@ -119,7 +204,7 @@
 
 #asstitle{
     font-family: 'Open Sans';
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 400;
     color: #fff !important;
     text-align: center;
@@ -156,10 +241,193 @@
     color: #3a97d3;
 }
 
+#wrapcultura{
+    
+}
+
 #wrapcultura .btnass i{
     color: #e74c3c;
 }
 
 #wrapambiente .btnass i{
     color: #23ae5f;
+}
+
+#btnlistaass{
+    float: right;
+    color: #fff;
+    position: relative;
+    z-index: 9999;
+}
+
+#lscontmenu{
+    background-color: #1c242d;
+    color: #fff;
+    width: 175px;
+}
+
+#wrapevento{
+    font-family: 'Open Sans';
+    text-align: center;
+}
+
+#data{
+    background-color: #f29c1f;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    border-radius: 150px;
+    margin: -50px auto 0 auto;
+    padding-top: 45px;
+}
+
+#mese{
+    color: #fff;
+    font-size: 2.5em;
+    margin-top: 24px;
+}
+
+#giorno{
+    font-family: 'Open Sans Bold';
+    font-size: 5em;
+    color: #fff;
+    font-weight: 800;
+}
+
+#map{
+    height: 200px;
+    background-color: #f29c1f;
+    width: 100%;
+    position: relative;
+}
+
+.maininfo{
+    color: #861d08;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 1.4;
+    margin-top: -20px;
+}
+
+.maininfo i{
+    font-size: 2em;
+}
+
+#nome{
+    font-family: 'Open Sans Bold';
+    color: #fff;
+    font-size: 2em;
+    line-height: 1.4;
+    width: 100%;
+    text-align: center;
+}
+
+#associazione{
+    color: #67481c;
+    font-size: 1.5em;
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+#descrizione{
+    color: #fff;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 200px;
+}
+
+#evtscroll{
+    position: relative;
+    z-index: 20;
+    overflow: visible;
+    background-color: #fbb44d;
+    height: 100%;
+}
+
+#evtscroll .scroll{
+    background-color: #f29c1f;
+    height: auto;
+}
+
+.expmap{
+    font-family: 'Open Sans';
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 1000;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.expmap i{
+    margin-right: 5px;
+}
+
+#wrapevento .scroll{
+    background-color: #f29c1f;
+}
+
+#mapovrlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.evtmap{
+    height: 100% !important;
+}
+
+.hidmap{
+    visibility: hidden;
+}
+
+#wrapseyf{
+    font-family: 'Open Sans';
+    color: #fff;
+    background-color: #ca222b;
+    background-image: url('../img/seyf.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#seyftitle{
+    font-family: 'Open Sans Bold';
+    text-align: center;
+    font-size: 6em;
+    color: #fff;
+}
+
+.seyfmain{
+    padding: 5px;
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+.seyfmain span{
+    font-family: 'Open Sans Bold';
+    font-size: 1.2em;
+    color: #fff;
+    display: block;
+    float: left;
+    padding-right: 10px;
+}
+
+#comingsoontitle{
+    font-family: 'Open Sans Bold';
+    font-size: 4em;
+    color: #fff;
+    display: block;
+    margin: 90px auto;
+    text-align: center;
+}
+
+.msgcoming{
+    font-family: 'Open Sans';    
+    font-size: 2em;
+    line-height: 1.4;
+    text-align: center;
+    padding: 10px 10px 150px 10px;
 }

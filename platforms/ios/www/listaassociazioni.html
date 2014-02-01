@@ -1,17 +1,27 @@
 <pane id="wrap{{sezione | lwnowhitespace}}">
     <content has-header="false" padded="false" scroll="false">
+        <a ng-click="doTheBack()" id="back"><i class="ion-arrow-left-c"></i></a>
         <div id="comune">
             <h1 class="nomecomune">{{comune | capitalize}}</h1>
         </div>
-        <scroll direction="y">
-            <list id="listaassociazioni">
-                <item 
-                    ng-repeat="assoc in associazioni" 
-                    ng-href="#/sezassoc/{{sezione}}/{{comune}}/{{assoc.nome}}/{{assoc.id}}">
-                    <p class="nome">{{assoc.nome}}</p>
-                    <p class="posiz"><i class="ion-location"></i>{{assoc.posizione}}</p>
-                </item>
-            </list>
+        <scroll id="scroller" class="scroll" direction="y">
+            <ul id="listaassociazioni" class="list">
+                <li ng-repeat="assoc in associazioni">
+                    <a ng-href="#/sezassoc/{{sezione}}/{{comune}}/{{assoc.nome}}/{{assoc.id}}">
+                        <p class="nome">{{assoc.nome}}</p>
+                        <p class="posiz"><i class="ion-location"></i>{{assoc.posizione}}</p>
+                    </a>
+                </li>
+            </ul>
         </scroll>
+        <!--<div ng-init="testFunction('scroller')"></div>-->
+        <!--<list id="listaassociazioni">
+            <item 
+                ng-repeat="assoc in associazioni" 
+                ng-href="#/sezassoc/{{sezione}}/{{comune}}/{{assoc.nome}}/{{assoc.id}}">
+                <p class="nome">{{assoc.nome}}</p>
+                <p class="posiz"><i class="ion-location"></i>{{assoc.posizione}}</p>
+            </item>
+        </list>-->
     </content>
 </pane>
