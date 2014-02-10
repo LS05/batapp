@@ -1703,3 +1703,328 @@ Terminating in response to SpringBoard's termination.
 
   ]
 ]
+2014-02-03 16:35:03.884 BATApp[7352:a0b] Multi-tasking -> Device: YES, App: YES
+2014-02-03 16:35:05.810 BATApp[7352:a0b] Unlimited access to network resources
+2014-02-03 16:35:14.342 BATApp[7352:a0b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-02-03 16:35:14.343 BATApp[7352:a0b] [CDVTimer][statusbar] 0.619054ms
+2014-02-03 16:35:14.343 BATApp[7352:a0b] [CDVTimer][TotalPluginStartup] 1.128018ms
+2014-02-03 16:35:15.473 BATApp[7352:a0b] Resetting plugins due to page load.
+2014-02-03 16:35:19.191 BATApp[7352:a0b] CDVPlugin class CDVStatusBar (pluginName: StatusBar) does not exist.
+2014-02-03 16:35:19.193 BATApp[7352:a0b] ERROR: Plugin 'StatusBar' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-03 16:35:19.193 BATApp[7352:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "INVALID",
+  "StatusBar",
+  "_ready",
+  [
+
+  ]
+]
+2014-02-03 16:35:19.193 BATApp[7352:a0b] CDVPlugin class CDVDevice (pluginName: Device) does not exist.
+2014-02-03 16:35:19.194 BATApp[7352:a0b] ERROR: Plugin 'Device' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-03 16:35:19.194 BATApp[7352:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "Device518461239",
+  "Device",
+  "getDeviceInfo",
+  [
+
+  ]
+]
+2014-02-03 16:35:19.250 BATApp[7352:a0b] Finished load of: file:///Users/lucasuriano/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/90515A6F-E0E3-4642-BAAC-32567792BA93/BATApp.app/www/index.html#/home
+2014-02-03 16:35:19.272 BATApp[7352:a0b] CDVPlugin class CDVStatusBar (pluginName: StatusBar) does not exist.
+2014-02-03 16:35:19.272 BATApp[7352:a0b] ERROR: Plugin 'StatusBar' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-03 16:35:19.273 BATApp[7352:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "INVALID",
+  "StatusBar",
+  "hide",
+  [
+
+  ]
+]
+2014-02-03 16:35:19.273 BATApp[7352:a0b] CDVPlugin class CDVStatusBar (pluginName: StatusBar) does not exist.
+2014-02-03 16:35:19.273 BATApp[7352:a0b] ERROR: Plugin 'StatusBar' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-03 16:35:19.274 BATApp[7352:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "INVALID",
+  "StatusBar",
+  "hide",
+  [
+
+  ]
+]
+2014-02-03 16:36:42.680 BATApp[7352:a0b] CDVPlugin class CDVStatusBar (pluginName: StatusBar) does not exist.
+2014-02-03 16:36:42.680 BATApp[7352:a0b] ERROR: Plugin 'StatusBar' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-03 16:36:42.681 BATApp[7352:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "INVALID",
+  "StatusBar",
+  "hide",
+  [
+
+  ]
+]
+2014-02-03 16:36:50.036 BATApp[7352:a0b] CDVPlugin class CDVStatusBar (pluginName: StatusBar) does not exist.
+2014-02-03 16:36:50.037 BATApp[7352:a0b] ERROR: Plugin 'StatusBar' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-03 16:36:50.037 BATApp[7352:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "INVALID",
+  "StatusBar",
+  "hide",
+  [
+
+  ]
+]
+2014-02-03 16:36:51.167 BATApp[7352:a0b] CDVPlugin class CDVStatusBar (pluginName: StatusBar) does not exist.
+2014-02-03 16:36:51.167 BATApp[7352:a0b] ERROR: Plugin 'StatusBar' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-03 16:36:51.167 BATApp[7352:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "INVALID",
+  "StatusBar",
+  "hide",
+  [
+
+  ]
+]
+2014-02-03 16:38:42.857 BATApp[8302:a0b] Multi-tasking -> Device: YES, App: YES
+2014-02-03 16:38:42.871 BATApp[8302:a0b] Unlimited access to network resources
+2014-02-03 16:38:42.911 BATApp[8302:a0b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-02-03 16:38:42.913 BATApp[8302:a0b] [CDVTimer][statusbar] 2.380013ms
+2014-02-03 16:38:42.918 BATApp[8302:a0b] [CDVTimer][TotalPluginStartup] 7.329047ms
+2014-02-03 16:38:43.274 BATApp[8302:a0b] Resetting plugins due to page load.
+2014-02-03 16:38:44.760 BATApp[8302:a0b] CDVPlugin class CDVStatusBar (pluginName: StatusBar) does not exist.
+2014-02-03 16:38:44.761 BATApp[8302:a0b] ERROR: Plugin 'StatusBar' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-03 16:38:44.761 BATApp[8302:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "INVALID",
+  "StatusBar",
+  "_ready",
+  [
+
+  ]
+]
+2014-02-03 16:38:44.762 BATApp[8302:a0b] CDVPlugin class CDVDevice (pluginName: Device) does not exist.
+2014-02-03 16:38:44.762 BATApp[8302:a0b] ERROR: Plugin 'Device' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-03 16:38:44.762 BATApp[8302:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "Device699231069",
+  "Device",
+  "getDeviceInfo",
+  [
+
+  ]
+]
+2014-02-03 16:38:44.809 BATApp[8302:a0b] Finished load of: file:///Users/lucasuriano/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/90515A6F-E0E3-4642-BAAC-32567792BA93/BATApp.app/www/index.html#/home
+2014-02-03 16:38:44.842 BATApp[8302:a0b] CDVPlugin class CDVStatusBar (pluginName: StatusBar) does not exist.
+2014-02-03 16:38:44.842 BATApp[8302:a0b] ERROR: Plugin 'StatusBar' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-03 16:38:44.842 BATApp[8302:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "INVALID",
+  "StatusBar",
+  "hide",
+  [
+
+  ]
+]
+2014-02-03 16:38:44.843 BATApp[8302:a0b] CDVPlugin class CDVStatusBar (pluginName: StatusBar) does not exist.
+2014-02-03 16:38:44.843 BATApp[8302:a0b] ERROR: Plugin 'StatusBar' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-03 16:38:44.843 BATApp[8302:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "INVALID",
+  "StatusBar",
+  "hide",
+  [
+
+  ]
+]
+2014-02-03 16:39:24.752 BATApp[8302:a0b] CDVPlugin class CDVStatusBar (pluginName: StatusBar) does not exist.
+2014-02-03 16:39:24.752 BATApp[8302:a0b] ERROR: Plugin 'StatusBar' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-03 16:39:24.752 BATApp[8302:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "INVALID",
+  "StatusBar",
+  "hide",
+  [
+
+  ]
+]
+2014-02-03 16:39:26.082 BATApp[8302:a0b] CDVPlugin class CDVStatusBar (pluginName: StatusBar) does not exist.
+2014-02-03 16:39:26.082 BATApp[8302:a0b] ERROR: Plugin 'StatusBar' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-03 16:39:26.083 BATApp[8302:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "INVALID",
+  "StatusBar",
+  "hide",
+  [
+
+  ]
+]
+2014-02-03 16:39:27.238 BATApp[8302:a0b] CDVPlugin class CDVStatusBar (pluginName: StatusBar) does not exist.
+2014-02-03 16:39:27.239 BATApp[8302:a0b] ERROR: Plugin 'StatusBar' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-03 16:39:27.240 BATApp[8302:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "INVALID",
+  "StatusBar",
+  "hide",
+  [
+
+  ]
+]
+2014-02-08 18:19:35.644 BATApp[27777:a0b] Multi-tasking -> Device: YES, App: YES
+2014-02-08 18:19:36.528 BATApp[27777:a0b] Unlimited access to network resources
+2014-02-08 18:19:42.456 BATApp[27777:a0b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-02-08 18:19:42.457 BATApp[27777:a0b] [CDVTimer][statusbar] 14.437020ms
+2014-02-08 18:19:42.458 BATApp[27777:a0b] [CDVTimer][TotalPluginStartup] 15.120029ms
+2014-02-08 18:19:46.474 BATApp[27777:a0b] Resetting plugins due to page load.
+2014-02-08 18:19:50.285 BATApp[27777:a0b] CDVPlugin class CDVStatusBar (pluginName: StatusBar) does not exist.
+2014-02-08 18:19:50.285 BATApp[27777:a0b] ERROR: Plugin 'StatusBar' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-08 18:19:50.286 BATApp[27777:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "INVALID",
+  "StatusBar",
+  "_ready",
+  [
+
+  ]
+]
+2014-02-08 18:19:50.286 BATApp[27777:a0b] CDVPlugin class CDVDevice (pluginName: Device) does not exist.
+2014-02-08 18:19:50.286 BATApp[27777:a0b] ERROR: Plugin 'Device' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-08 18:19:50.287 BATApp[27777:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "Device1597649788",
+  "Device",
+  "getDeviceInfo",
+  [
+
+  ]
+]
+2014-02-08 18:19:50.437 BATApp[27777:a0b] Finished load of: file:///Users/lucasuriano/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/90515A6F-E0E3-4642-BAAC-32567792BA93/BATApp.app/www/index.html#/home
+2014-02-08 18:19:50.506 BATApp[27777:a0b] CDVPlugin class CDVStatusBar (pluginName: StatusBar) does not exist.
+2014-02-08 18:19:50.506 BATApp[27777:a0b] ERROR: Plugin 'StatusBar' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-08 18:19:50.506 BATApp[27777:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "INVALID",
+  "StatusBar",
+  "hide",
+  [
+
+  ]
+]
+2014-02-08 18:19:50.507 BATApp[27777:a0b] CDVPlugin class CDVStatusBar (pluginName: StatusBar) does not exist.
+2014-02-08 18:19:50.507 BATApp[27777:a0b] ERROR: Plugin 'StatusBar' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-08 18:19:50.507 BATApp[27777:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "INVALID",
+  "StatusBar",
+  "hide",
+  [
+
+  ]
+]
+2014-02-08 18:20:18.139 BATApp[27777:a0b] CDVPlugin class CDVStatusBar (pluginName: StatusBar) does not exist.
+2014-02-08 18:20:18.139 BATApp[27777:a0b] ERROR: Plugin 'StatusBar' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-08 18:20:18.140 BATApp[27777:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "INVALID",
+  "StatusBar",
+  "hide",
+  [
+
+  ]
+]
+2014-02-08 23:36:04.083 BATApp[53625:a0b] Multi-tasking -> Device: YES, App: YES
+2014-02-08 23:36:04.512 BATApp[53625:a0b] Unlimited access to network resources
+2014-02-08 23:36:09.547 BATApp[53625:a0b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-02-08 23:36:09.547 BATApp[53625:a0b] [CDVTimer][statusbar] 0.581980ms
+2014-02-08 23:36:09.548 BATApp[53625:a0b] [CDVTimer][TotalPluginStartup] 1.029015ms
+2014-02-08 23:36:10.634 BATApp[53625:a0b] Resetting plugins due to page load.
+2014-02-08 23:36:14.088 BATApp[53625:a0b] CDVPlugin class CDVStatusBar (pluginName: StatusBar) does not exist.
+2014-02-08 23:36:14.089 BATApp[53625:a0b] ERROR: Plugin 'StatusBar' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-08 23:36:14.089 BATApp[53625:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "INVALID",
+  "StatusBar",
+  "_ready",
+  [
+
+  ]
+]
+2014-02-08 23:36:14.089 BATApp[53625:a0b] CDVPlugin class CDVDevice (pluginName: Device) does not exist.
+2014-02-08 23:36:14.121 BATApp[53625:a0b] ERROR: Plugin 'Device' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-08 23:36:14.121 BATApp[53625:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "Device938614325",
+  "Device",
+  "getDeviceInfo",
+  [
+
+  ]
+]
+2014-02-08 23:36:14.121 BATApp[53625:a0b] CDVPlugin class CDVStatusBar (pluginName: StatusBar) does not exist.
+2014-02-08 23:36:14.122 BATApp[53625:a0b] ERROR: Plugin 'StatusBar' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-08 23:36:14.122 BATApp[53625:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "INVALID",
+  "StatusBar",
+  "hide",
+  [
+
+  ]
+]
+2014-02-08 23:36:14.122 BATApp[53625:a0b] CDVPlugin class CDVStatusBar (pluginName: StatusBar) does not exist.
+2014-02-08 23:36:14.123 BATApp[53625:a0b] ERROR: Plugin 'StatusBar' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-08 23:36:14.123 BATApp[53625:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "INVALID",
+  "StatusBar",
+  "hide",
+  [
+
+  ]
+]
+2014-02-08 23:36:14.403 BATApp[53625:a0b] Finished load of: file:///Users/lucasuriano/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/90515A6F-E0E3-4642-BAAC-32567792BA93/BATApp.app/www/index.html#/home
+2014-02-09 13:32:59.576 BATApp[70499:a0b] Multi-tasking -> Device: YES, App: YES
+2014-02-09 13:33:00.005 BATApp[70499:a0b] Unlimited access to network resources
+2014-02-09 13:33:04.883 BATApp[70499:a0b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-02-09 13:33:04.883 BATApp[70499:a0b] [CDVTimer][statusbar] 0.643969ms
+2014-02-09 13:33:04.884 BATApp[70499:a0b] [CDVTimer][TotalPluginStartup] 1.135051ms
+2014-02-09 13:33:06.557 BATApp[70499:a0b] Resetting plugins due to page load.
+2014-02-09 13:33:09.343 BATApp[70499:a0b] CDVPlugin class CDVStatusBar (pluginName: StatusBar) does not exist.
+2014-02-09 13:33:09.343 BATApp[70499:a0b] ERROR: Plugin 'StatusBar' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-09 13:33:09.344 BATApp[70499:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "INVALID",
+  "StatusBar",
+  "_ready",
+  [
+
+  ]
+]
+2014-02-09 13:33:09.344 BATApp[70499:a0b] CDVPlugin class CDVDevice (pluginName: Device) does not exist.
+2014-02-09 13:33:09.344 BATApp[70499:a0b] ERROR: Plugin 'Device' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-09 13:33:09.345 BATApp[70499:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "Device796227539",
+  "Device",
+  "getDeviceInfo",
+  [
+
+  ]
+]
+2014-02-09 13:33:09.345 BATApp[70499:a0b] CDVPlugin class CDVStatusBar (pluginName: StatusBar) does not exist.
+2014-02-09 13:33:09.345 BATApp[70499:a0b] ERROR: Plugin 'StatusBar' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-09 13:33:09.346 BATApp[70499:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "INVALID",
+  "StatusBar",
+  "hide",
+  [
+
+  ]
+]
+2014-02-09 13:33:09.346 BATApp[70499:a0b] CDVPlugin class CDVStatusBar (pluginName: StatusBar) does not exist.
+2014-02-09 13:33:09.347 BATApp[70499:a0b] ERROR: Plugin 'StatusBar' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-09 13:33:09.347 BATApp[70499:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "INVALID",
+  "StatusBar",
+  "hide",
+  [
+
+  ]
+]
+2014-02-09 13:33:09.586 BATApp[70499:a0b] Finished load of: file:///Users/lucasuriano/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/90515A6F-E0E3-4642-BAAC-32567792BA93/BATApp.app/www/index.html#/home
+2014-02-09 13:33:14.200 BATApp[70499:a0b] CDVPlugin class CDVStatusBar (pluginName: StatusBar) does not exist.
+2014-02-09 13:33:14.201 BATApp[70499:a0b] ERROR: Plugin 'StatusBar' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-09 13:33:14.201 BATApp[70499:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "INVALID",
+  "StatusBar",
+  "hide",
+  [
+
+  ]
+]
+2014-02-09 13:33:16.765 BATApp[70499:a0b] CDVPlugin class CDVStatusBar (pluginName: StatusBar) does not exist.
+2014-02-09 13:33:16.765 BATApp[70499:a0b] ERROR: Plugin 'StatusBar' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-02-09 13:33:16.765 BATApp[70499:a0b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "INVALID",
+  "StatusBar",
+  "hide",
+  [
+
+  ]
+]

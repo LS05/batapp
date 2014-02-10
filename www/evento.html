@@ -3,6 +3,14 @@
         <div id="map" class="{{animation}} {{mapsize}}">
             <!--<div class="expmap expevt"><i class="ion-close-round"></i>Chiudi</div>-->
             <div id="mapovrlay" ng-click="espandi()" class="{{mapdisp}}"></div>
+            <div id="mapcontrols">
+                <button id="btnespandi" class="button button-energized {{espclass}}" ng-click="espandi()">
+                    <i class="ion-arrow-expand"></i>
+                </button>
+                <button id="btnclose" class="button button-energized {{clclass}}" ng-click="chiudi()">
+                    <i class="ion-arrow-shrink"></i>
+                </button>
+            </div>
             <google-map location="address" type="road" class="map"></google-map>
         </div>
         <scroll class="scroll" direction="y" id="evtscroll">

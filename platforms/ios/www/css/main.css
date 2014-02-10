@@ -62,6 +62,24 @@
     color: #fff;
 }
 
+#wraptempolibero{
+    background-color: #21928b;
+}
+
+#wrapsalute{
+    background-color: #ca441a;
+}
+
+#wrapcuriosita{
+    background-color: #f47d1f;
+}
+
+#wrapsalute #comune{
+    background-color: #ca441a;    
+}
+
+
+
 #wrapcultura .buttonwrap{
     height: 50px;
     position: relative;
@@ -72,6 +90,66 @@
     border: 1px solid #cd3627;
     border-top: none;
 }
+
+#wrapambiente .list li{
+    border: 1px solid #19964f;
+    border-top: none;
+}
+
+#wrapsalute .list li{
+    border: 1px solid #b23711;
+    border-top: none;
+}
+
+#wrapsalute .btnass i{
+    color: #ca441a;
+}
+
+#wrapambiente .list li .posiz{
+    color: #074f25;
+}
+
+#wrapambiente .list li .time{
+    color: #074f25;
+}
+
+
+#wrapimprenditoriagiovanile .list li{
+    border: 1px solid #2c83ba;
+    border-top: none;
+}
+
+#wrapimprenditoriagiovanile .list li .posiz{
+    color: #033f66;
+}
+
+#wrapimprenditoriagiovanile .list li .time{
+    color: #033f66;
+}
+
+
+
+#wraptempolibero #comune{
+    background-color: #21928b;
+}
+
+#wraptempolibero .list li{
+    border: 1px solid #16746e;
+    border-top: none;
+}
+
+#wraptempolibero .list li .posiz{
+    color: #043633;
+}
+
+#wraptempolibero .list li .time{
+    color: #043633;
+}
+
+#wraptempolibero .btnass i{
+    color: #21928b;
+}
+
 
 #wrapambiente{
     background-color: #23ae5f;
@@ -84,14 +162,14 @@
 }
 
 #wrapimprenditoriagiovanile #listaassociazioni li{
-    border: 1px solid #074b77;
+    border: 1px solid #2c83ba;
     border-left: none;
     border-right: none;
     border-top: none;
 } 
 
 #wrapimprenditoriagiovanile #listaassociazioni .posiz{
-    color:#074b77;
+    color:#033f66;
 }
 
 #wrapambiente #comune{
@@ -99,7 +177,7 @@
 }
 
 #wrapambiente #listaassociazioni li{
-    border:1px solid #0e6f38;
+    border:1px solid #19964f;
     border-left: none;
     border-right: none;
     border-top: none;
@@ -115,8 +193,9 @@
 }
 
 #seztitle{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 100;
-    font-size: 5em;
+    font-size: 4em;
     color: #fff;
     text-align: center;
     padding: 15px 40px;
@@ -165,6 +244,14 @@
     color: #791307;
 }
 
+#wrapsalute .list li .posiz{
+    color: #550a01;
+}
+
+#wrapsalute .list li .time{
+    color: #550a01;
+}
+
 .posiz .ion-location{
     margin-right: 5px;
 }
@@ -202,12 +289,18 @@
     color: #fff;
 }
 
-#asstitle{
+#asstitle, #assinfotit{
     font-family: 'Open Sans';
     font-size: 1.5em;
     font-weight: 400;
     color: #fff !important;
     text-align: center;
+}
+
+#assinfotit{
+    font-size: 1.7em;
+    font-weight: 800;
+    padding: 0 40px;
 }
 
 #btninfo{
@@ -237,12 +330,12 @@
 
 }
 
-#wrapimprenditoriagiovanile .btnass i{
-    color: #3a97d3;
+#wrapimprenditoriagiovanile #seztitle{
+    font-size: 3em;
 }
 
-#wrapcultura{
-    
+#wrapimprenditoriagiovanile .btnass i{
+    color: #3a97d3;
 }
 
 #wrapcultura .btnass i{
@@ -296,7 +389,6 @@
 
 #map{
     height: 200px;
-    background-color: #f29c1f;
     width: 100%;
     position: relative;
 }
@@ -330,11 +422,18 @@
     width: 100%;
 }
 
-#descrizione{
+#descrizione, #descass{
     color: #fff;
     width: 100%;
     text-align: left;
     padding-bottom: 200px;
+}
+
+#descass{
+    padding-bottom: 50px;
+    font-size: 1.2em;
+    line-height: 1.4;
+    padding: 0 10px;
 }
 
 #evtscroll{
@@ -345,10 +444,147 @@
     height: 100%;
 }
 
-#evtscroll .scroll{
-    background-color: #f29c1f;
-    height: auto;
+#evtscroll #descrizione{
+    font-family: 'Open Sans';
 }
+
+#wrapsalute #evtscroll{
+    background-color: #ca441a;
+}
+
+#wrapsalute #evtscroll .scroll{
+    background-color: #ca441a;
+}
+
+#wrapsalute #evtscroll #data{
+    background-color: #ca441a;
+}
+
+#wrapsalute #btnespandi{
+    background-color: #ca441a;
+    border: none;
+}
+
+#wrapsalute #btnclose{
+    background-color: #ca441a;
+    border: none; 
+}
+
+#wrapsalute .maininfo{
+    color: #550a01;
+}
+
+
+
+
+#wrapcultura #evtscroll{
+    background-color: #e74c3c;
+}
+
+#wrapcultura #evtscroll .scroll{
+    background-color: #e74c3c;
+}
+
+#wrapcultura #evtscroll #data{
+    background-color: #e74c3c;
+}
+
+#wrapcultura #btnespandi{
+    background-color: #e74c3c;
+    border: none;
+}
+
+#wrapcultura #btnclose{
+    background-color: #e74c3c;
+    border: none; 
+}
+
+
+
+
+#wrapambiente #evtscroll{
+    background-color: #23ae5f;
+}
+
+#wrapambiente #evtscroll .scroll{
+    background-color: #23ae5f;
+}
+
+#wrapambiente #evtscroll #data{
+    background-color: #23ae5f;
+}
+
+#wrapambiente #btnespandi{
+    background-color: #23ae5f;
+    border: none;
+}
+
+#wrapambiente #btnclose{
+    background-color: #23ae5f;
+    border: none; 
+}
+
+#wrapambiente .maininfo{
+    color: #033618;
+}
+
+
+
+#wrapimprenditoriagiovanile #evtscroll{
+    background-color: #3a97d3;
+}
+
+#wrapimprenditoriagiovanile #evtscroll .scroll{
+    background-color: #3a97d3;
+}
+
+#wrapimprenditoriagiovanile #evtscroll #data{
+    background-color: #3a97d3;
+}
+
+#wrapimprenditoriagiovanile #btnespandi{
+    background-color: #3a97d3;
+    border: none;
+}
+
+#wrapimprenditoriagiovanile #btnclose{
+    background-color: #3a97d3;
+    border: none; 
+}
+
+#wrapimprenditoriagiovanile .maininfo{
+    color: #033f66;
+}
+
+
+
+
+#wraptempolibero #evtscroll{
+    background-color: #21928b;
+}
+
+#wraptempolibero #evtscroll .scroll{
+    background-color: #21928b;
+}
+
+#wraptempolibero #evtscroll #data{
+    background-color: #21928b;
+}
+
+#wraptempolibero #btnespandi{
+    background-color: #21928b;
+    border: none;
+}
+
+#wraptempolibero #btnclose{
+    background-color: #21928b;
+    border: none; 
+}
+
+#wraptempolibero .maininfo{
+    color: #043633;
+}
+
 
 .expmap{
     font-family: 'Open Sans';
@@ -379,8 +615,16 @@
     height: 100% !important;
 }
 
+.stmap{
+    height: 200px !important;
+}
+
 .hidmap{
     visibility: hidden;
+}
+
+.mapblock{
+    visibility: visible;
 }
 
 #wrapseyf{
@@ -430,4 +674,31 @@
     line-height: 1.4;
     text-align: center;
     padding: 10px 10px 150px 10px;
+}
+
+#btnespandi, #btnclose{
+    padding: 0px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+
+#btnespandi i, #btnclose i{
+    font-size: 2em;
+    line-height: 60px;
+}
+
+#btnclose.attivo, #btnespandi.attivo{
+    display: block;
+}
+
+#btnclose.nactive, #btnespandi.nactive{
+    display: none;
+}
+#mapcontrols{
+    width: 60px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 19;
 }

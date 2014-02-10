@@ -486,7 +486,7 @@
 					"\"$(OBJROOT)/UninstalledProducts/include\"",
 					"\"$(BUILT_PRODUCTS_DIR)\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
@@ -539,7 +539,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = BATApp;
-				PROVISIONING_PROFILE = "41D1DBCA-4820-496B-9B91-517355DA5599";
+				PROVISIONING_PROFILE = "5016C23C-BDEB-425E-B415-F86050403BD0";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Distribution;
@@ -577,7 +577,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = BATApp;
-				PROVISIONING_PROFILE = "41D1DBCA-4820-496B-9B91-517355DA5599";
+				PROVISIONING_PROFILE = "5016C23C-BDEB-425E-B415-F86050403BD0";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -613,7 +613,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = BATApp;
-				PROVISIONING_PROFILE = "41D1DBCA-4820-496B-9B91-517355DA5599";
+				PROVISIONING_PROFILE = "5016C23C-BDEB-425E-B415-F86050403BD0";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -642,7 +642,7 @@
 					"\"$(OBJROOT)/UninstalledProducts/include\"",
 					"\"$(BUILT_PRODUCTS_DIR)\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
@@ -689,7 +689,7 @@
 					"\"$(OBJROOT)/UninstalledProducts/include\"",
 					"\"$(BUILT_PRODUCTS_DIR)\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,

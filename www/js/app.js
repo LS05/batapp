@@ -13,31 +13,67 @@ batApp.config(function($stateProvider, $urlRouterProvider) {
       templateUrl: "seyf.html",
       controller: 'mainCtrl'
     })
+    .state('impgiov', {
+      url: "/sezassoc/imprenditoriagiovanile",
+      templateUrl: "impgiov.html",
+      controller: 'ImpGiovController'
+    })
+    .state('templib', {
+      url: "/sezassoc/tempolibero",
+      templateUrl: "templib.html",
+      controller: 'TempLibController'
+    })
     .state('sezione', {
       url: "/sezassoc/:sezione",
-      templateUrl: "comingsoon.html",
-      controller: 'mainCtrl'
+      templateUrl: "sezione.html",
+      controller: 'SezioneController'
     })
     .state('associazioni', {
       url: "/sezassoc/:sezione/:comune",
-      templateUrl: "comingsoon.html",
-      controller: 'mainCtrl'
+      templateUrl: "listaassociazioni.html",
+      controller: 'ListaComController'
     })
     .state('associazione', {
       url: "/sezassoc/:sezione/:comune/:associazione/:idass",
-      templateUrl: "comingsoon.html",
-      controller: 'mainCtrl'
+      templateUrl: "associazione.html",
+      controller: 'AssociazioneController'
+    })
+    .state('info', {
+      url: "/sezassoc/:sezione/:comune/:associazione/:idass/info",
+      templateUrl: "infoass.html",
+      controller: 'InfoController'
+    })
+    .state('eventiass', {
+      url: "/sezassoc/:sezione/:comune/:associazione/:idass/eventi",
+      templateUrl: "eventiass.html",
+      controller: 'EventiAssController'
+    })
+    .state('eventoass', {
+      url: "/sezassoc/:sezione/:comune/:associazione/:idass/eventi/:evento",
+      templateUrl: "eventoass.html",
+      controller: 'EventoAssController'
     })
     .state('eventi', {
       url: "/eventi",
-      templateUrl: "comingsoon.html",
+      templateUrl: "eventi.html",
       controller: 'mainCtrl'
     })
     .state('evento', {
       url: "/eventi/:evento",
-      templateUrl: "comingsoon.html",
+      templateUrl: "evento.html",
       controller: 'mainCtrl'
     })
+    .state('curiosita', {
+      url: "/curiosita",
+      templateUrl: "sezione.html",
+      controller: 'CuriositaController'
+    })
+    .state('listacuriosita', {
+      url: "/curiosita/:comune",
+      templateUrl: "listacuriosita.html",
+      controller: 'mainCtrl'
+    })
+
 
     // if none of the above are matched, go to this one
     $urlRouterProvider.otherwise("/home");
@@ -75,7 +111,7 @@ batApp.directive('googleMap', function($timeout) {
   
             window.map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
   
-            var marker = new google.maps.Marker({
+            window.marker = new google.maps.Marker({
               position: results[0].geometry.location,
               map: window.map
             });
@@ -118,6 +154,33 @@ batApp.filter('lwnowhitespace', function() {
    }
 });
 
+batApp.controller('CuriositaController', function($scope, $stateParams) {
+    $scope.sezione = "curiosita";
+    $scope.testFunction = function(elem){
+
+      var s = document.getElementById(elem);
+
+      /*for(var i = 0; i < 100; i++) {
+        var li = document.createElement('li');
+        li.className = 'item';
+        li.innerHTML = 'Item ' + i;
+        s.firstElementChild.appendChild(li);
+      }*/
+
+      var scroll = new ionic.views.Scroll({
+        el: s
+      });
+
+
+
+    };
+
+    $scope.doTheBack = function() {
+      window.history.back();
+    };
+
+});
+
 batApp.controller('SezioneController', function($scope, $stateParams) {
     $scope.sezione = $stateParams.sezione;
     $scope.testFunction = function(elem){
@@ -147,16 +210,22 @@ batApp.controller('SezioneController', function($scope, $stateParams) {
       $scope.impgiov = 'Imprenditoria Giovanile';
 });
 
+batApp.controller('ImpGiovController', function($scope, $stateParams) {
+    $scope.sezione = 'imprenditoriagiovanile';
+    $scope.titolo = 'Imprenditoria Giovanile';
+});
+
+batApp.controller('TempLibController', function($scope, $stateParams) {
+    $scope.sezione = 'tempolibero';
+    $scope.titolo = 'Tempo Libero';
+});
+
 batApp.controller('ListaComController', function($scope, $stateParams) {
     $scope.comune = $stateParams.comune;
     $scope.sezione = $stateParams.sezione;
 
     $scope.openLeft = function() {
       $scope.sideMenuController.toggleRight();
-    };
-
-    $scope.doTheBack = function() {
-      window.history.back();
     };
 });
 
@@ -172,6 +241,25 @@ batApp.controller('AssociazioneController', function($scope, $stateParams) {
     console.log($scope);
 });
 
+batApp.controller('InfoController', function($scope, $stateParams) {
+  $scope.sezione = $stateParams.sezione;
+  $scope.associazione = $stateParams.associazione;
+});
+
+batApp.controller('EventiAssController', function($scope, $stateParams) {
+  $scope.sezione = $stateParams.sezione;
+  $scope.comune = $stateParams.comune;
+  $scope.associazione = $stateParams.associazione;
+  $scope.idass = $stateParams.idass;
+});
+
+batApp.controller('EventoAssController', function($scope, $stateParams) {
+    $scope.sezione = $stateParams.sezione;
+    $scope.comune = $stateParams.comune;
+    $scope.associazione = $stateParams.associazione;
+    $scope.idass = $stateParams.idass;
+});
+
 batApp.controller('mainCtrl', function($scope, $ionicPlatform, $state) {
 
   $scope.leftButtons = [
@@ -184,7 +272,7 @@ batApp.controller('mainCtrl', function($scope, $ionicPlatform, $state) {
     }
   ];
 
-  $scope.address = "Andria, Puglia, Italy";
+  $scope.address = "Via Andria 100, Barletta, Puglia, Italy";
 
   Platform = $ionicPlatform;
 
@@ -193,10 +281,31 @@ batApp.controller('mainCtrl', function($scope, $ionicPlatform, $state) {
     StatusBar.hide();
   });
 
+  $scope.espclass = "attivo";
+  $scope.clclass = "nactive";
+
   $scope.espandi = function(){
-    $scope.animation = 'pullDown';
     $scope.mapsize = 'evtmap';
-    $scope.mapdisp = 'hidmap'
+    $scope.mapdisp = 'hidmap';
+    $scope.espclass = "nactive";
+    $scope.clclass = "attivo";
+    setTimeout(reloadMap, 1000);
+    function reloadMap(){
+      google.maps.event.trigger(map, 'resize');
+    }
+  }
+
+  $scope.chiudi = function(){
+    $scope.mapsize = 'stmap';
+    $scope.mapdisp = 'mapblock';
+    $scope.espclass = "attivo";
+    $scope.clclass = "nactive";
+    setTimeout(reloadMap, 400);
+    function reloadMap(){
+      google.maps.event.trigger(map, 'resize');
+      var latLng = window.marker.getPosition(); // returns LatLng object
+      window.map.panTo(latLng); // setCenter takes a LatLng object
+    }
   }
 
   $scope.doTheBack = function() {
