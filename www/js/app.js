@@ -324,7 +324,7 @@ batApp.controller('mainCtrl', function($scope, $ionicPlatform, $state) {
   $scope.associazioni = [
     { 
       id: '1',
-      nome: 'Associazione Modellistica Castel del Monte',
+      nome: 'Teatro Sospeso',
       posizione: 'Via Castel del Monte, 80'
     },
     { 

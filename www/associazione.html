@@ -1,11 +1,9 @@
 <pane id="wrap{{sezione}}">
-<!-- The nav bar that will be updated as we navigate -->
-    <content has-header="false" padded="false" scroll="false">
-        <div id="map">
-            <google-map location="address" type="road" class="map"></google-map>
-        </div>
+    <div class="bar bar-header">
+        <a ng-click="doTheBack()" id="back"><i class="ion-arrow-left-c" style="color:#000;"></i></a>
+    </div>
+    <content has-header="true" padded="false" scroll="false">
         <div style="position:relative;">
-            <a ng-click="doTheBack()" id="back"><i class="ion-arrow-left-c"></i></a>
             <h1 id="asstitle">{{associazione}}</h1>
         </div>
         <div class="row">
@@ -25,6 +23,9 @@
                     <i class="ion-calendar"></i><p>Eventi</p>
                 </a>
             </div>
+        </div>
+        <div id="map">
+            <google-map location="address" type="road" class="map"></google-map>
         </div>
     </content>
 </pane>

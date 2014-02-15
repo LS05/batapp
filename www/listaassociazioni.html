@@ -1,7 +1,10 @@
 <pane id="wrap{{sezione | lwnowhitespace}}">
-    <content has-header="false" padded="false" scroll="false">
-        <a ng-click="doTheBack()" id="back"><i class="ion-arrow-left-c"></i></a>
+    <div class="bar bar-header">
+        <a ng-click="doTheBack()" id="back"><i class="ion-arrow-left-c" style="color:#000;"></i></a>
+    </div>
+    <content has-header="true" padded="false" scroll="false">
         <div id="comune">
+            <strong class="nomecomune">{{sezione | capitalize}}</strong>
             <h1 class="nomecomune">{{comune | capitalize}}</h1>
         </div>
         <scroll id="scroller" class="scroll" direction="y">
