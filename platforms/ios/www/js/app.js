@@ -106,7 +106,8 @@ batApp.directive('googleMap', function($timeout) {
                 mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
               },
               scrollwheel: false,
-              disableDefaultUI: true
+              disableDefaultUI: true,
+              clickable:false
             };
   
             window.map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
@@ -202,12 +203,6 @@ batApp.controller('SezioneController', function($scope, $stateParams) {
 
     };
 
-    $scope.doTheBack = function() {
-      window.history.back();
-    };
-
-    if( $scope.sezione == 'imprenditoriagiovanile' )
-      $scope.impgiov = 'Imprenditoria Giovanile';
 });
 
 batApp.controller('ImpGiovController', function($scope, $stateParams) {
@@ -235,10 +230,6 @@ batApp.controller('AssociazioneController', function($scope, $stateParams) {
     $scope.associazione = $stateParams.associazione;
     $scope.idass = $stateParams.idass;
     $scope.address = "Andria, Puglia, Italy";
-    $scope.doTheBack = function() {
-      window.history.back();
-    };
-    console.log($scope);
 });
 
 batApp.controller('InfoController', function($scope, $stateParams) {
@@ -262,15 +253,9 @@ batApp.controller('EventoAssController', function($scope, $stateParams) {
 
 batApp.controller('mainCtrl', function($scope, $ionicPlatform, $state) {
 
-  $scope.leftButtons = [
-    { 
-      type: 'button-positive',
-      content: '<i class="ion-arrow-left-c" id="back"></i>',
-      tap: function(e) {
-          $state.go("home");
-      }
-    }
-  ];
+  $scope.changeView = function(view){
+    $state.go(view); // path not hash
+  }
 
   $scope.address = "Via Andria 100, Barletta, Puglia, Italy";
 
@@ -324,7 +309,7 @@ batApp.controller('mainCtrl', function($scope, $ionicPlatform, $state) {
   $scope.associazioni = [
     { 
       id: '1',
-      nome: 'Associazione Modellistica Castel del Monte',
+      nome: 'Teatro Sospeso',
       posizione: 'Via Castel del Monte, 80'
     },
     { 

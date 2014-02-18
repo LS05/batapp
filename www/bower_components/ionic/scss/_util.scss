@@ -4,9 +4,9 @@
  * --------------------------------------------------
  */
 
-.hidden, 
-.hide { 
-  display: none; 
+.hidden,
+.hide {
+  display: none;
 }
 .show {
   display: block;
@@ -15,17 +15,36 @@
   visibility: hidden;
 }
 
+.hide-footer {
+  .bar-footer,
+  .tabs {
+    display: none;
+  }
+  .has-footer,
+  .has-tabs {
+    bottom: 0;
+  }
+}
+
 .inline {
   display: inline-block;
+}
+
+.disable-pointer-events {
+  pointer-events: none;
+}
+
+.enable-pointer-events {
+  pointer-events: auto;
 }
 
 .block {
   display: block;
   clear: both;
-  &:after { 
-    display: block; 
-    visibility: hidden; 
-    clear: both; 
+  &:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
     height: 0;
     content: ".";
   }
@@ -93,8 +112,8 @@
 /**
  * Utility Colors
  * --------------------------------------------------
- * Utility colors are added to help set a naming convention. You'll 
- * notice we purposely do not use words like "red" or "blue", but 
+ * Utility colors are added to help set a naming convention. You'll
+ * notice we purposely do not use words like "red" or "blue", but
  * instead have colors which represent an emotion or generic theme.
  */
 

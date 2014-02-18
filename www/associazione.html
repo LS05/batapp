@@ -1,10 +1,16 @@
 <pane id="wrap{{sezione}}">
-    <div class="bar bar-header">
-        <a ng-click="doTheBack()" id="back"><i class="ion-arrow-left-c" style="color:#000;"></i></a>
+    <div class="bar bar-header" id="header{{sezione}}">
+        <a class="button icon-left ion-chevron-left button-clear button-dark" ng-click="changeView('{{sezione}}')">{{comune | capitalize}}</a>
     </div>
     <content has-header="true" padded="false" scroll="false">
+        <div id="map">
+            <google-map location="address" type="road" class="map"></google-map>
+        </div>
         <div style="position:relative;">
             <h1 id="asstitle">{{associazione}}</h1>
+        </div>
+        <div id="asslocation">
+            <p ng-repeat="assoc in associazioni | filter:{id:idass}"><i class="ion-location"></i>{{assoc.posizione}}</p>
         </div>
         <div class="row">
             <div class="col" id="btninfo">
@@ -23,9 +29,6 @@
                     <i class="ion-calendar"></i><p>Eventi</p>
                 </a>
             </div>
-        </div>
-        <div id="map">
-            <google-map location="address" type="road" class="map"></google-map>
         </div>
     </content>
 </pane>

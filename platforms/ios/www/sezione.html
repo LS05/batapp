@@ -1,5 +1,7 @@
 <pane id="wrap{{sezione}}">
-    <a ng-click="doTheBack()" id="back"><i class="ion-arrow-left-c"></i></a>
+    <div class="bar bar-header" id="header{{sezione}}">
+        <a class="button icon-left ion-chevron-left button-clear button-dark" ng-click="changeView('home')">Home</a>
+    </div>
     <content has-header="true" padded="false" scroll="false">
         <div>
             <h1 id="seztitle">{{sezione | capitalize}}</h1>

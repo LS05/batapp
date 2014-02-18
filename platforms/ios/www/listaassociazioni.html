@@ -1,6 +1,8 @@
 <pane id="wrap{{sezione | lwnowhitespace}}">
-    <content has-header="false" padded="false" scroll="false">
-        <a ng-click="doTheBack()" id="back"><i class="ion-arrow-left-c"></i></a>
+    <div class="bar bar-header" id="header{{sezione}}">
+        <a class="button icon-left ion-chevron-left button-clear button-dark" ng-click="changeView('{{sezione}}')">{{sezione | capitalize}}</a>
+    </div>
+    <content has-header="true" padded="false" scroll="false">
         <div id="comune">
             <h1 class="nomecomune">{{comune | capitalize}}</h1>
         </div>

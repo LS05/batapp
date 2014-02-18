@@ -53,12 +53,16 @@
     text-decoration: none;
 }
 
-#wrapcultura .scroll{
-    padding-bottom: 150px;
+#wrapcultura, #wrapcultura .buttonwrap, #headercultura{
+    background-color: #e74c3c;
+    color: #fff;
 }
 
-#wrapcultura, #wrapcultura .buttonwrap{
-    background-color: #e74c3c;
+#headercultura{
+    border-bottom: none;
+}
+
+#headercultura a{
     color: #fff;
 }
 
@@ -138,7 +142,7 @@
     border-top: none;
 }
 
-#wraptempolibero .list li .posiz{
+#wraptempolibero .list li .posiz, #wraptempolibero #asslocation p{
     color: #043633;
 }
 
@@ -151,8 +155,13 @@
 }
 
 
-#wrapambiente{
+#wrapambiente, #headerambiente{
     background-color: #23ae5f;
+    color: #fff;
+    border: none;
+}
+
+#headerambiente a{
     color: #fff;
 }
 
@@ -183,7 +192,7 @@
     border-top: none;
 }
 
-#wrapambiente #listaassociazioni .posiz{
+#wrapambiente #listaassociazioni .posiz, #wrapambiente #asslocation p{
     color:#064f25;
 }
 
@@ -192,13 +201,23 @@
     color: #fff;
 }
 
-#seztitle{
+#seztitle, #evttitle{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 100;
     font-size: 4em;
     color: #fff;
     text-align: center;
     padding: 15px 40px;
+}
+
+#evttitle{
+    font-size: 3.5em;
+}
+
+#evtsub{
+    font-family: 'Open Sans Bold';
+    text-align: center;
+    color: #fff;
 }
 
 #comune{
@@ -239,12 +258,12 @@
     font-weight: 600;
 }
 
-.list li .posiz{
+.list li .posiz, #wrapcultura #asslocation p{
     font-weight: 600;
     color: #791307;
 }
 
-#wrapsalute .list li .posiz{
+#wrapsalute .list li .posiz, #wrapsalute #assolocation p{
     color: #550a01;
 }
 
@@ -291,16 +310,30 @@
 
 #asstitle, #assinfotit{
     font-family: 'Open Sans';
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 400;
     color: #fff !important;
     text-align: center;
+    margin-top: 10px;
 }
 
 #assinfotit{
-    font-size: 1.7em;
-    font-weight: 800;
+    font-size: 2em;
     padding: 0 40px;
+    margin-bottom: 40px;
+}
+
+#asslocation p{
+    font-family: 'Open Sans';
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #033f66;
+}
+
+#asslocation p i{
+    font-size: 1.2em;
+    margin-right: 5px;
 }
 
 #btninfo{
@@ -696,6 +729,7 @@
 #btnclose.nactive, #btnespandi.nactive{
     display: none;
 }
+
 #mapcontrols{
     width: 60px;
     position: absolute;

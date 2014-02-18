@@ -1,0 +1,18 @@
+<pane id="wrap{{sezione}}">
+    <a ng-click="doTheBack()" id="back"><i class="ion-arrow-left-c"></i></a>
+    <content has-header="true" padded="false" scroll="false">
+        <div>
+            <h1 id="seztitle">{{titolo}}</h1>
+        </div>
+        <scroll direction="y" id="scroller">
+            <ul id="listacomuni">
+                <li ng-repeat="comune in comuni">
+                    <a ng-href="#/sezassoc/{{sezione}}/{{comune.title|lowercase}}">
+                        {{comune.title}}
+                    </a>
+                </li>
+            </ul>
+        </scroll>
+    </content>
+    <div ng-init="testFunction('scroller')"></div>
+</pane>

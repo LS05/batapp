@@ -1,10 +1,9 @@
 <pane id="wrap{{sezione | lwnowhitespace}}">
-    <div class="bar bar-header">
-        <a ng-click="doTheBack()" id="back"><i class="ion-arrow-left-c" style="color:#000;"></i></a>
+    <div class="bar bar-header" id="header{{sezione}}">
+        <a class="button icon-left ion-chevron-left button-clear button-dark" ng-click="changeView('{{sezione}}')">{{sezione | capitalize}}</a>
     </div>
     <content has-header="true" padded="false" scroll="false">
         <div id="comune">
-            <strong class="nomecomune">{{sezione | capitalize}}</strong>
             <h1 class="nomecomune">{{comune | capitalize}}</h1>
         </div>
         <scroll id="scroller" class="scroll" direction="y">
