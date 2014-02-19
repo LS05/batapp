@@ -1,0 +1,15 @@
+<pane id="wrapeventi">
+    <content padded="true" scroll="false">
+        <scroll id="scroller" class="scroll" direction="y">
+            <ul id="listaeventi" class="list">
+                <li ng-repeat="assoc in associazioni">
+                    <a ng-href="#/eventi/{{assoc.nome}}">
+                        <p class="nome">{{assoc.nome}}</p>
+                        <span class="posiz"><i class="ion-location"></i>{{assoc.posizione}}</span>
+                        <span class="time"><i class="ion-clock"></i>19:00</span>
+                    </a>
+                </li>
+            </ul>
+        </scroll>
+    </content>
+</pane>

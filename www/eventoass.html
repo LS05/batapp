@@ -1,8 +1,11 @@
 <pane id="wrap{{sezione}}">
-    <content has-header="false" padded="false" scroll="false">
+    <div class="bar bar-header" id="header{{sezione}}">
+        <a class="button icon-left ion-chevron-left button-clear button-dark" ng-click="changeView('eventiass')">Eventi</a>
+    </div>
+    <content has-header="true" padded="false" scroll="false">
         <div id="map" class="{{animation}} {{mapsize}}">
             <!--<div class="expmap expevt"><i class="ion-close-round"></i>Chiudi</div>-->
-            <div id="mapovrlay" ng-click="espandi()" class="{{mapdisp}}"></div>
+            <!--<div id="mapovrlay" ng-click="espandi()" class="{{mapdisp}}"></div>-->
             <div id="mapcontrols">
                 <button id="btnespandi" class="button button-energized {{espclass}}" ng-click="espandi()">
                     <i class="ion-arrow-expand"></i>
@@ -13,7 +16,7 @@
             </div>
             <google-map location="address" type="road" class="map"></google-map>
         </div>
-        <scroll class="scroll" direction="y" id="evtscroll">
+        <scroll class="scroll" direction="y" id="evtscroll" scroll="false">
             <div class="row">
                 <div class="col coldata">                
                     <div id="data">
@@ -43,6 +46,7 @@
                 <div id="descrizione">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor, augue vel varius posuere, mauris tortor ultrices ipsum, vitae bibend.</p>
                 </div>
+                <a href="maps://?q=Via Trani, Andria" target="_system">Cupertino</a>
             </div>
         </scroll>
     </content>

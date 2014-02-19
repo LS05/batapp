@@ -1,0 +1,745 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Regular.ttf") format("opentype");   
+        /* Make sure you defined the correct path, which is related to
+            the location of your file `my_css.css` */ 
+}
+
+@font-face {
+    font-family: "Open Sans Bold";
+    src: url("../fonts/OpenSans-Bold.ttf") format("opentype");   
+        /* Make sure you defined the correct path, which is related to
+            the location of your file `my_css.css` */ 
+}
+
+.bar{
+    border: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+#mainhead button{
+    border: none;
+    font-size: 2em;
+    background: none;
+}
+
+#back{
+    font-size: 2em;
+    line-height: 31px;
+    top: 5px;
+    left: 10px;
+}
+
+.scroll{
+    width: 100%;
+    height: 100%;
+}
+
+#listacomuni, .list{
+    font-family: 'Open Sans';
+    color: #fff !important;
+    line-height: 1.8;
+}
+
+#listacomuni li{
+    color: #fff;
+    background: none;
+    text-align: center;
+    border: none;
+    margin-top: 20px;
+}
+
+#listacomuni li a{
+    font-family: 'Open Sans Bold';
+    background: none;
+    font-size: 2.2em;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+#wrapcultura, #wrapcultura .buttonwrap, #headercultura{
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+#headercultura{
+    border-bottom: none;
+}
+
+#headercultura a{
+    color: #fff;
+}
+
+#wraptempolibero{
+    background-color: #21928b;
+}
+
+#wrapsalute{
+    background-color: #ca441a;
+}
+
+#wrapcuriosita{
+    background-color: #f47d1f;
+}
+
+#wrapsalute #comune{
+    background-color: #ca441a;    
+}
+
+
+
+#wrapcultura .buttonwrap{
+    height: 50px;
+    position: relative;
+    z-index: 9999;
+}
+
+#wrapcultura .list li{
+    border: 1px solid #cd3627;
+    border-top: none;
+}
+
+#wrapambiente .list li{
+    border: 1px solid #19964f;
+    border-top: none;
+}
+
+#wrapsalute .list li{
+    border: 1px solid #b23711;
+    border-top: none;
+}
+
+#wrapsalute .btnass i{
+    color: #ca441a;
+}
+
+#wrapambiente .list li .posiz{
+    color: #074f25;
+}
+
+#wrapambiente .list li .time{
+    color: #074f25;
+}
+
+
+#wrapimprenditoriagiovanile .list li{
+    border: 1px solid #2c83ba;
+    border-top: none;
+}
+
+#wrapimprenditoriagiovanile .list li .posiz{
+    color: #033f66;
+}
+
+#wrapimprenditoriagiovanile .list li .time{
+    color: #033f66;
+}
+
+
+
+#wraptempolibero #comune{
+    background-color: #21928b;
+}
+
+#wraptempolibero .list li{
+    border: 1px solid #16746e;
+    border-top: none;
+}
+
+#wraptempolibero .list li .posiz, #wraptempolibero #asslocation p{
+    color: #043633;
+}
+
+#wraptempolibero .list li .time{
+    color: #043633;
+}
+
+#wraptempolibero .btnass i{
+    color: #21928b;
+}
+
+
+#wrapambiente, #headerambiente{
+    background-color: #23ae5f;
+    color: #fff;
+    border: none;
+}
+
+#headerambiente a{
+    color: #fff;
+}
+
+#wrapimprenditoriagiovanile, #wrapimprenditoriagiovanile #comune{
+    background-color: #3a97d3;
+    color: #fff;
+}
+
+#wrapimprenditoriagiovanile #listaassociazioni li{
+    border: 1px solid #2c83ba;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+} 
+
+#wrapimprenditoriagiovanile #listaassociazioni .posiz{
+    color:#033f66;
+}
+
+#wrapambiente #comune{
+    background-color:#23ae5f;
+}
+
+#wrapambiente #listaassociazioni li{
+    border:1px solid #19964f;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+#wrapambiente #listaassociazioni .posiz, #wrapambiente #asslocation p{
+    color:#064f25;
+}
+
+#wrapeventi{
+    background-color: #f29c1f;
+    color: #fff;
+}
+
+#seztitle, #evttitle{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 4em;
+    color: #fff;
+    text-align: center;
+    padding: 15px 40px;
+}
+
+#evttitle{
+    font-size: 3.5em;
+}
+
+#evtsub{
+    font-family: 'Open Sans Bold';
+    text-align: center;
+    color: #fff;
+}
+
+#comune{
+    background-color: #e74c3c;
+    position: relative;
+    z-index: 1000;
+    padding-bottom: 5px;
+    height: 120px;
+}
+
+#comune h1{
+    font-weight: 100;
+    color: #fff;
+    font-size: 3.5em;
+    text-align: center;
+    margin: 0px;
+    padding-top: 50px;
+}
+
+.list li{
+    border: 1px solid #e28518;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.list li a{
+    font-size: 1.2em;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.list li .nome{
+    font-family: 'Open Sans';
+    color: #fff;
+    margin-bottom: 2px;
+    font-weight: 600;
+}
+
+.list li .posiz, #wrapcultura #asslocation p{
+    font-weight: 600;
+    color: #791307;
+}
+
+#wrapsalute .list li .posiz, #wrapsalute #assolocation p{
+    color: #550a01;
+}
+
+#wrapsalute .list li .time{
+    color: #550a01;
+}
+
+.posiz .ion-location{
+    margin-right: 5px;
+}
+
+.list .time{
+    color: #791307;
+    font-weight: 600;
+    display: block;
+}
+
+.list .time i{
+    margin-right: 3px;
+}
+
+.mnitem{
+    width: 150px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.mnitem a{
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.col{
+    width: 50%;
+    font-family: 'Open Sans';
+    text-align: center;
+}
+
+#homewrapper{
+    background-color: #1c242d;
+    color: #fff;
+}
+
+#asstitle, #assinfotit{
+    font-family: 'Open Sans';
+    font-size: 2em;
+    font-weight: 400;
+    color: #fff !important;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#assinfotit{
+    font-size: 2em;
+    padding: 0 40px;
+    margin-bottom: 40px;
+}
+
+#asslocation p{
+    font-family: 'Open Sans';
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #033f66;
+}
+
+#asslocation p i{
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+#btninfo{
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+#btneventi{
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.btnass{
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btnass i{
+    background-color: #fff;
+    width: 60px;
+    font-size: 1.5em;
+    line-height: 60px;
+    border-radius: 60px;
+    margin: 0 auto 10px auto;
+
+}
+
+#wrapimprenditoriagiovanile #seztitle{
+    font-size: 3em;
+}
+
+#wrapimprenditoriagiovanile .btnass i{
+    color: #3a97d3;
+}
+
+#wrapcultura .btnass i{
+    color: #e74c3c;
+}
+
+#wrapambiente .btnass i{
+    color: #23ae5f;
+}
+
+#btnlistaass{
+    float: right;
+    color: #fff;
+    position: relative;
+    z-index: 9999;
+}
+
+#lscontmenu{
+    background-color: #1c242d;
+    color: #fff;
+    width: 175px;
+}
+
+#wrapevento{
+    font-family: 'Open Sans';
+    text-align: center;
+}
+
+#data{
+    background-color: #f29c1f;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    border-radius: 150px;
+    margin: -50px auto 0 auto;
+    padding-top: 45px;
+}
+
+#mese{
+    color: #fff;
+    font-size: 2.5em;
+    margin-top: 24px;
+}
+
+#giorno{
+    font-family: 'Open Sans Bold';
+    font-size: 5em;
+    color: #fff;
+    font-weight: 800;
+}
+
+#map{
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+
+.maininfo{
+    color: #861d08;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 1.4;
+    margin-top: -20px;
+}
+
+.maininfo i{
+    font-size: 2em;
+}
+
+#nome{
+    font-family: 'Open Sans Bold';
+    color: #fff;
+    font-size: 2em;
+    line-height: 1.4;
+    width: 100%;
+    text-align: center;
+}
+
+#associazione{
+    color: #67481c;
+    font-size: 1.5em;
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+#descrizione, #descass{
+    color: #fff;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 200px;
+}
+
+#descass{
+    font-family: 'Open Sans';
+    padding-bottom: 50px;
+    font-size: 1.2em;
+    line-height: 1.4;
+    padding: 0 10px;
+}
+
+#evtscroll{
+    position: relative;
+    z-index: 20;
+    overflow: visible;
+    background-color: #fbb44d;
+    height: 100%;
+}
+
+#evtscroll #descrizione{
+    font-family: 'Open Sans';
+}
+
+#wrapsalute #evtscroll{
+    background-color: #ca441a;
+}
+
+#wrapsalute #evtscroll .scroll{
+    background-color: #ca441a;
+}
+
+#wrapsalute #evtscroll #data{
+    background-color: #ca441a;
+}
+
+#wrapsalute #btnespandi{
+    background-color: #ca441a;
+    border: none;
+}
+
+#wrapsalute #btnclose{
+    background-color: #ca441a;
+    border: none; 
+}
+
+#wrapsalute .maininfo{
+    color: #550a01;
+}
+
+
+
+
+#wrapcultura #evtscroll{
+    background-color: #e74c3c;
+}
+
+#wrapcultura #evtscroll .scroll{
+    background-color: #e74c3c;
+}
+
+#wrapcultura #evtscroll #data{
+    background-color: #e74c3c;
+}
+
+#wrapcultura #btnespandi{
+    background-color: #e74c3c;
+    border: none;
+}
+
+#wrapcultura #btnclose{
+    background-color: #e74c3c;
+    border: none; 
+}
+
+
+
+
+#wrapambiente #evtscroll{
+    background-color: #23ae5f;
+}
+
+#wrapambiente #evtscroll .scroll{
+    background-color: #23ae5f;
+}
+
+#wrapambiente #evtscroll #data{
+    background-color: #23ae5f;
+}
+
+#wrapambiente #btnespandi{
+    background-color: #23ae5f;
+    border: none;
+}
+
+#wrapambiente #btnclose{
+    background-color: #23ae5f;
+    border: none; 
+}
+
+#wrapambiente .maininfo{
+    color: #033618;
+}
+
+
+
+#wrapimprenditoriagiovanile #evtscroll{
+    background-color: #3a97d3;
+}
+
+#wrapimprenditoriagiovanile #evtscroll .scroll{
+    background-color: #3a97d3;
+}
+
+#wrapimprenditoriagiovanile #evtscroll #data{
+    background-color: #3a97d3;
+}
+
+#wrapimprenditoriagiovanile #btnespandi{
+    background-color: #3a97d3;
+    border: none;
+}
+
+#wrapimprenditoriagiovanile #btnclose{
+    background-color: #3a97d3;
+    border: none; 
+}
+
+#wrapimprenditoriagiovanile .maininfo{
+    color: #033f66;
+}
+
+
+
+
+#wraptempolibero #evtscroll{
+    background-color: #21928b;
+}
+
+#wraptempolibero #evtscroll .scroll{
+    background-color: #21928b;
+}
+
+#wraptempolibero #evtscroll #data{
+    background-color: #21928b;
+}
+
+#wraptempolibero #btnespandi{
+    background-color: #21928b;
+    border: none;
+}
+
+#wraptempolibero #btnclose{
+    background-color: #21928b;
+    border: none; 
+}
+
+#wraptempolibero .maininfo{
+    color: #043633;
+}
+
+
+.expmap{
+    font-family: 'Open Sans';
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 1000;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.expmap i{
+    margin-right: 5px;
+}
+
+#wrapevento .scroll{
+    background-color: #f29c1f;
+}
+
+#mapovrlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.evtmap{
+    height: 100% !important;
+}
+
+.stmap{
+    height: 200px !important;
+}
+
+.hidmap{
+    visibility: hidden;
+}
+
+.mapblock{
+    visibility: visible;
+}
+
+#wrapseyf{
+    font-family: 'Open Sans';
+    color: #fff;
+    background-color: #ca222b;
+    background-image: url('../img/seyf.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#seyftitle{
+    font-family: 'Open Sans Bold';
+    text-align: center;
+    font-size: 6em;
+    color: #fff;
+}
+
+.seyfmain{
+    padding: 5px;
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+.seyfmain span{
+    font-family: 'Open Sans Bold';
+    font-size: 1.2em;
+    color: #fff;
+    display: block;
+    float: left;
+    padding-right: 10px;
+}
+
+#comingsoontitle{
+    font-family: 'Open Sans Bold';
+    font-size: 4em;
+    color: #fff;
+    display: block;
+    margin: 90px auto;
+    text-align: center;
+}
+
+.msgcoming{
+    font-family: 'Open Sans';    
+    font-size: 2em;
+    line-height: 1.4;
+    text-align: center;
+    padding: 10px 10px 150px 10px;
+}
+
+#btnespandi, #btnclose{
+    padding: 0px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+
+#btnespandi i, #btnclose i{
+    font-size: 2em;
+    line-height: 60px;
+}
+
+#btnclose.attivo, #btnespandi.attivo{
+    display: block;
+}
+
+#btnclose.nactive, #btnespandi.nactive{
+    display: none;
+}
+
+#mapcontrols{
+    width: 60px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 19;
+}

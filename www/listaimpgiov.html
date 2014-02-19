@@ -1,0 +1,29 @@
+<pane id="wrap{{sezione | lwnowhitespace}}">
+    <div class="bar bar-header" id="header{{sezione}}">
+        <a class="button icon-left ion-chevron-left button-clear button-dark" ng-click="changeView('impgiov')">{{titolo}}</a>
+    </div>
+    <content has-header="true" padded="false" scroll="false">
+        <div id="comune">
+            <h1 class="nomecomune">{{comune | capitalize}}</h1>
+        </div>
+        <scroll id="scroller" class="scroll" direction="y">
+            <ul id="listaassociazioni" class="list">
+                <li ng-repeat="assoc in associazioni">
+                    <a ng-href="#/sezassoc/{{sezione}}/{{comune}}/{{assoc.nome}}/{{assoc.id}}">
+                        <p class="nome">{{assoc.nome}}</p>
+                        <p class="posiz"><i class="ion-location"></i>{{assoc.posizione}}</p>
+                    </a>
+                </li>
+            </ul>
+        </scroll>
+        <!--<div ng-init="testFunction('scroller')"></div>-->
+        <!--<list id="listaassociazioni">
+            <item 
+                ng-repeat="assoc in associazioni" 
+                ng-href="#/sezassoc/{{sezione}}/{{comune}}/{{assoc.nome}}/{{assoc.id}}">
+                <p class="nome">{{assoc.nome}}</p>
+                <p class="posiz"><i class="ion-location"></i>{{assoc.posizione}}</p>
+            </item>
+        </list>-->
+    </content>
+</pane>

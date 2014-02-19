@@ -28,6 +28,11 @@ batApp.config(function($stateProvider, $urlRouterProvider) {
       templateUrl: "sezione.html",
       controller: 'SezioneController'
     })
+    .state('listaimpgiov', {
+      url: "/sezassoc/imprenditoriagiovanile/:comune",
+      templateUrl: "listaimpgiov.html",
+      controller: 'ListaImpGiovController'
+    })
     .state('associazioni', {
       url: "/sezassoc/:sezione/:comune",
       templateUrl: "listaassociazioni.html",
@@ -224,6 +229,12 @@ batApp.controller('ListaComController', function($scope, $stateParams) {
     };
 });
 
+batApp.controller('ListaImpGiovController', function($scope, $stateParams) {
+    $scope.comune = $stateParams.comune;
+    $scope.sezione = 'imprenditoriagiovanile';
+    $scope.titolo = 'Imprenditoria Giovanile';
+});
+
 batApp.controller('AssociazioneController', function($scope, $stateParams) {
     $scope.sezione = $stateParams.sezione;
     $scope.comune = $stateParams.comune;
@@ -259,12 +270,12 @@ batApp.controller('mainCtrl', function($scope, $ionicPlatform, $state) {
 
   $scope.address = "Via Andria 100, Barletta, Puglia, Italy";
 
-  Platform = $ionicPlatform;
+  /*Platform = $ionicPlatform;
 
   Platform.ready(function() {
-    // hide the status bar using the StatusBar plugin
+     hide the status bar using the StatusBar plugin
     StatusBar.hide();
-  });
+  });*/
 
   $scope.espclass = "attivo";
   $scope.clclass = "nactive";
@@ -299,11 +310,7 @@ batApp.controller('mainCtrl', function($scope, $ionicPlatform, $state) {
 
   $scope.comuni = [
     { title: 'Andria' },
-    { title: 'Barletta' },
-    { title: 'Trani' },
-    { title: 'Canosa' },
-    { title: 'Margherita' },
-    { title: 'Ginosa' }
+    { title: 'Trani'}
   ];
 
   $scope.associazioni = [
@@ -314,201 +321,14 @@ batApp.controller('mainCtrl', function($scope, $ionicPlatform, $state) {
     },
     { 
       id: '2',
-      nome: 'Associazione Via Trani',
+      nome: 'Associazione Trani',
       posizione: 'Via Trani, 54'
     },
     { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
-      posizione: 'Via Trani, 54'
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Via Trani',
+      id: '3',
+      nome: 'Associazione del Borgo',
       posizione: 'Via Trani, 54'
     }
-
-
   ];
 
 });

@@ -1,0 +1,12 @@
+<pane id="wrapcultura">
+    <content has-header="false" padded="false" scroll="false">
+        <div><h1 id="seztitle">Cultura</h1></div>
+        <scroll direction="y">
+            <list id="listacomuni">
+                <item ng-repeat="comune in comuni" ng-href="#/sezassoc/cultura/{{comune.title|lowercase}}">
+                    {{comune.title}}
+                </item>
+            </list>
+        </scroll>
+    </content>
+</pane>

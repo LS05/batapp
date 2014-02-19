@@ -1,0 +1,34 @@
+<pane id="wrap{{sezione}}">
+    <div class="bar bar-header" id="header{{sezione}}">
+        <a class="button icon-left ion-chevron-left button-clear button-dark" ng-click="changeView('associazioni')">{{comune | capitalize}}</a>
+    </div>
+    <content has-header="true" padded="false" scroll="false">
+        <div id="map">
+            <google-map location="address" type="road" class="map"></google-map>
+        </div>
+        <div style="position:relative;">
+            <h1 id="asstitle">{{associazione}}</h1>
+        </div>
+        <div id="asslocation">
+            <p ng-repeat="assoc in associazioni | filter:{id:idass}"><i class="ion-location"></i>{{assoc.posizione}}</p>
+        </div>
+        <div class="row">
+            <div class="col" id="btninfo">
+                <a 
+                    ng-href="#/sezassoc/{{sezione}}/{{comune}}/{{associazione}}/{{idass}}/info"
+                    class="btnass btninfo"
+                >
+                    <i class="ion-plus-round"></i><p>Info</p>
+                </a>
+            </div>
+            <div class="col" id="btneventi">
+                <a 
+                    ng-href="#/sezassoc/{{sezione}}/{{comune}}/{{associazione}}/{{idass}}/eventi"
+                    class="btnass btneventi"
+                >
+                    <i class="ion-calendar"></i><p>Eventi</p>
+                </a>
+            </div>
+        </div>
+    </content>
+</pane>

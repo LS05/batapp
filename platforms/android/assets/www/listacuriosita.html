@@ -1,0 +1,17 @@
+<pane id="wrap{{sezione | lwnowhitespace}}">
+    <content has-header="false" padded="false" scroll="false">
+        <a ng-click="doTheBack()" id="back"><i class="ion-arrow-left-c"></i></a>
+        <div id="comune">
+            <h1 class="nomecomune">{{comune | capitalize}}</h1>asdadas
+        </div>
+        <scroll id="scroller" class="scroll" direction="y">
+            <ul id="listaassociazioni" class="list">
+                <li ng-repeat="assoc in associazioni">
+                    <a ng-href="#/sezassoc/{{sezione}}/{{comune}}/{{assoc.nome}}/{{assoc.id}}">
+                        <p class="nome">{{assoc.nome}}</p>
+                    </a>
+                </li>
+            </ul>
+        </scroll>
+    </content>
+</pane>

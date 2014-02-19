@@ -1,5 +1,11 @@
 <pane id="wrapeventi">
-    <content padded="true" scroll="false">
+    <div class="bar bar-header" id="headereventi">
+        <a class="button icon-left ion-chevron-left button-clear button-dark" ng-click="changeView('home')">Home</a>
+    </div>
+    <content padded="true" scroll="false" has-header="true">
+        <div>
+            <h1 id="seztitle">Eventi</h1>
+        </div>
         <scroll id="scroller" class="scroll" direction="y">
             <ul id="listaeventi" class="list">
                 <li ng-repeat="assoc in associazioni">

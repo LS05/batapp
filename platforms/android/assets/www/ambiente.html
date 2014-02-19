@@ -1,0 +1,12 @@
+<pane id="wrapambiente">
+    <content has-header="false" padded="false" scroll="false">
+        <div><h1 id="seztitle">Ambiente</h1></div>
+        <scroll direction="y">
+            <list id="listacomuni">
+                <item ng-repeat="comune in comuni" ng-href="#/sezassoc/ambiente/{{comune.title|lowercase}}">
+                    {{comune.title}}
+                </item>
+            </list>
+        </scroll>
+    </content>
+</pane>
