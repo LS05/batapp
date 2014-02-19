@@ -2169,34 +2169,3 @@ Terminating in response to SpringBoard's termination.
   ]
 ]
 2014-02-18 10:50:27.423 BATApp[10044:a0b] Finished load of: file:///Users/lucasuriano/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/90515A6F-E0E3-4642-BAAC-32567792BA93/BATApp.app/www/index.html#/home
-2014-02-19 16:00:03.061 BATApp[25536:a0b] Multi-tasking -> Device: YES, App: YES
-2014-02-19 16:00:03.551 BATApp[25536:a0b] Unlimited access to network resources
-2014-02-19 16:00:10.466 BATApp[25536:a0b] [CDVTimer][statusbar] 1813.202024ms
-2014-02-19 16:00:10.467 BATApp[25536:a0b] [CDVTimer][TotalPluginStartup] 1813.844979ms
-2014-02-19 16:00:11.165 BATApp[25536:a0b] Resetting plugins due to page load.
-2014-02-19 16:00:18.406 BATApp[25536:a0b] THREAD WARNING: ['Device'] took '27.877930' ms. Plugin should use a background thread.
-2014-02-19 16:00:18.496 BATApp[25536:a0b] Finished load of: file:///Users/lucasuriano/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/90515A6F-E0E3-4642-BAAC-32567792BA93/BATApp.app/www/index.html#/home
-2014-02-19 16:02:58.643 BATApp[26403:a0b] Multi-tasking -> Device: YES, App: YES
-2014-02-19 16:02:58.696 BATApp[26403:a0b] Unlimited access to network resources
-2014-02-19 16:02:58.868 BATApp[26403:a0b] [CDVTimer][statusbar] 142.291009ms
-2014-02-19 16:02:58.869 BATApp[26403:a0b] [CDVTimer][TotalPluginStartup] 143.301010ms
-2014-02-19 16:03:00.120 BATApp[26403:a0b] Resetting plugins due to page load.
-2014-02-19 16:03:01.895 BATApp[26403:a0b] Finished load of: file:///Users/lucasuriano/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/90515A6F-E0E3-4642-BAAC-32567792BA93/BATApp.app/www/index.html#/home
-2014-02-19 16:03:28.500 BATApp[26403:a0b] Resetting plugins due to page load.
-2014-02-19 16:03:31.749 BATApp[26403:a0b] Finished load of: https://maps.google.com/?q=Via+Trani,+Andria
-2014-02-19 16:22:18.548 BATApp[28527:a0b] Multi-tasking -> Device: YES, App: YES
-2014-02-19 16:22:18.826 BATApp[28527:a0b] Unlimited access to network resources
-2014-02-19 16:22:21.392 BATApp[28527:a0b] [CDVTimer][statusbar] 285.344005ms
-2014-02-19 16:22:21.393 BATApp[28527:a0b] [CDVTimer][TotalPluginStartup] 286.044955ms
-2014-02-19 16:22:21.631 BATApp[28527:a0b] Resetting plugins due to page load.
-2014-02-19 16:22:24.318 BATApp[28527:a0b] Finished load of: file:///Users/lucasuriano/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/90515A6F-E0E3-4642-BAAC-32567792BA93/BATApp.app/www/index.html#/home
-2014-02-19 16:24:32.893 BATApp[28527:a0b] CDVWebViewDelegate: Navigation started when state=1
-2014-02-19 16:24:32.893 BATApp[28527:a0b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
-2014-02-19 16:24:32.894 BATApp[28527:a0b] Resetting plugins due to page load.
-2014-02-19 16:24:35.938 BATApp[28527:a0b] Finished load of: https://maps.google.com/?q=Via+Trani,+Andria
-2014-02-19 16:32:40.045 BATApp[29698:a0b] Multi-tasking -> Device: YES, App: YES
-2014-02-19 16:32:40.151 BATApp[29698:a0b] Unlimited access to network resources
-2014-02-19 16:32:42.833 BATApp[29698:a0b] [CDVTimer][statusbar] 324.647009ms
-2014-02-19 16:32:42.835 BATApp[29698:a0b] [CDVTimer][TotalPluginStartup] 326.402962ms
-2014-02-19 16:32:43.242 BATApp[29698:a0b] Resetting plugins due to page load.
-2014-02-19 16:32:45.473 BATApp[29698:a0b] Finished load of: file:///Users/lucasuriano/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/90515A6F-E0E3-4642-BAAC-32567792BA93/BATApp.app/www/index.html#/home
