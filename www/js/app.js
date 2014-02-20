@@ -8,6 +8,11 @@ batApp.config(function($stateProvider, $urlRouterProvider) {
       templateUrl: "main.html",
       controller: 'mainCtrl'
     })
+    .state('categorie', {
+      url: "/sezassoc/categorie",
+      templateUrl: "categorie.html",
+      controller: 'mainCtrl'
+    })
     .state('seyf', {
       url: "/seyf",
       templateUrl: "seyf.html",

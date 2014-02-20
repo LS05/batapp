@@ -39,6 +39,12 @@
     height: 100%;
 }
 
+.btncat{
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
 /****************/
 
 .bar{
@@ -321,15 +327,27 @@
 }
 
 .mnitem{
-    width: 150px;
     margin: 0 auto;
     padding-bottom: 30px;
 }
 
 .mnitem a{
+    display: block;
+    width: 100%;
     font-size: 1.2em;
     color: #fff;
     text-decoration: none;
+    text-align: center;
+}
+
+.mnitem img{
+    float: left;
+    margin-top: 7px;
+}
+
+.mnitem p{
+    text-align: center;
+    line-height: 74px;
 }
 
 .col{

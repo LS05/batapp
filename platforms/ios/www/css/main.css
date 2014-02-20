@@ -342,6 +342,7 @@
     font-weight: 600;
     font-size: 1.2em;
     color: #033f66;
+    margin: 30px 0 30px;
 }
 
 #asslocation p i{
@@ -434,7 +435,7 @@
 }
 
 #map{
-    height: 250px;
+    height: 320px;
     width: 100%;
     position: relative;
 }
