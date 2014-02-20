@@ -12,6 +12,41 @@
             the location of your file `my_css.css` */ 
 }
 
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("../fonts/helvetica-neue.ttf") format("opentype");   
+        /* Make sure you defined the correct path, which is related to
+            the location of your file `my_css.css` */ 
+}
+
+/**
+    Versione 2 del Menu
+**/
+
+#centerwrap{
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+#ovblack{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+}
+
+/****************/
+
+.bar{
+    border: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
 #mainhead button{
     border: none;
     font-size: 2em;
@@ -202,7 +237,7 @@
 }
 
 #seztitle, #evttitle{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue";
     font-weight: 100;
     font-size: 4em;
     color: #fff;
@@ -304,6 +339,9 @@
 }
 
 #homewrapper{
+    background-image: url('http://farm6.staticflickr.com/5513/10185421565_e06c3f1707_o.jpg');
+    background-size: cover;
+    background-position: left top;
     background-color: #1c242d;
     color: #fff;
 }
@@ -421,7 +459,7 @@
 }
 
 #map{
-    height: 200px;
+    height: 250px;
     width: 100%;
     position: relative;
 }
@@ -733,7 +771,7 @@
 #mapcontrols{
     width: 60px;
     position: absolute;
-    top: 10px;
+    bottom: 25px;
     right: 10px;
     z-index: 19;
 }

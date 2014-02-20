@@ -1,6 +1,6 @@
 <pane id="wrap{{sezione}}">
     <div class="bar bar-header" id="header{{sezione}}">
-        <a class="button icon-left ion-chevron-left button-clear button-dark" ng-click="changeView('home')">Indietro</a>
+        <a class="button icon-left ion-chevron-left button-clear button-dark" ng-click="changeView('associazione')">Indietro</a>
     </div>
     <content has-header="true" padded="true" scroll="false">
         <h1 id="evttitle" ng-repeat="assoc in associazioni | filter:{id:idass}">{{assoc.nome}}</h1>
