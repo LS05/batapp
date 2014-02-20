@@ -17,8 +17,8 @@ $dark:                  #444 !default;
 // Base
 // -------------------------------
 
-$font-family-sans-serif:         "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !default;
-$font-family-light-sans-serif:   "Helvetica Neue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !default;
+$font-family-sans-serif:         "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-light-sans-serif:   "Helvetica Neue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif:              Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:          Monaco, Menlo, Consolas, "Courier New", monospace !default;
 
@@ -57,12 +57,10 @@ $border-radius-base:             4px !default;
 $border-radius-large:            6px !default;
 $border-radius-small:            3px !default;
 
-
 // Content
 // -------------------------------
 
 $scroll-refresh-icon-color: #666666;
-
 
 // Buttons
 // -------------------------------
@@ -78,7 +76,7 @@ $button-height:                       42px;
 $button-padding:                      12px !default;
 $button-icon-size:                    24px;
 
-$button-large-font-size:              20px;
+$button-large-font-size:              18px;
 $button-large-height:                 54px;
 $button-large-padding:                16px !default;
 $button-large-icon-size:              32px;
@@ -88,10 +86,10 @@ $button-small-height:                 28px;
 $button-small-padding:                4px !default;
 $button-small-icon-size:              16px;
 
-$button-bar-button-font-size:         13px;
+$button-bar-button-font-size:         12px;
 $button-bar-button-height:            32px;
 $button-bar-button-padding:           8px !default;
-$button-bar-button-icon-size:         20px;
+$button-bar-button-icon-size:         24px;
 
 $button-light-bg:                     $light;
 $button-light-text:                   #444;
@@ -158,7 +156,7 @@ $button-default-active-border:        $button-stable-active-border;
 // -------------------------------
 
 $bar-height:                      44px !default;
-$bar-title-font-size:             17px;
+$bar-title-font-size:             $font-size-large;
 $bar-padding-portrait:            5px;
 $bar-padding-landscape:           5px;
 $bar-transparency:                1;
@@ -231,9 +229,6 @@ $tabs-height:                      49px !default;
 $tabs-text-font-size:              14px !default;
 $tabs-text-font-size-side-icon:    12px !default;
 $tabs-icon-size:                   32px !default;
-$tabs-badge-padding:               2px 6px;
-$tabs-badge-font-size:             12px !default;
-$tabs-text-font-size:              14px !default;
 
 $tabs-light-bg:                    $button-light-bg;
 $tabs-light-border:                $button-light-border;
@@ -285,8 +280,6 @@ $item-font-size:                   16px;
 $item-border-width:                1px !default;
 $item-padding:                     15px !default;
 
-$item-button-font-size:            18px !default;
-$item-button-line-height:          32px !default;
 $item-icon-font-size:              32px !default;
 $item-icon-fill-font-size:         28px !default;
 
@@ -495,9 +488,6 @@ $modal-bg-color:              #fff !default;
 // -------------------------------
 
 $grid-padding-width:           10px !default;
-$grid-responsive-sm-break:     567px !default;  // smaller than landscape phone
-$grid-responsive-md-break:     767px !default;  // smaller than portrait tablet
-$grid-responsive-lg-break:     1023px !default; // smaller than landscape tablet
 
 
 // Action Sheets
@@ -564,7 +554,7 @@ $z-index-item-drag:          0;
 $z-index-item-edit:          0;
 $z-index-item-options:       1;
 $z-index-item-radio:         3;
-$z-index-item-reordering:    9;
+$z-index-item-reordering:    20;
 $z-index-item-toggle:        3;
 $z-index-menu:               0;
 $z-index-modal:              10;

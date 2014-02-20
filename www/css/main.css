@@ -12,19 +12,6 @@
             the location of your file `my_css.css` */ 
 }
 
-@font-face {
-    font-family: "Helvetica Neue";
-    src: url("../fonts/helvetica-neue.ttf") format("opentype");   
-        /* Make sure you defined the correct path, which is related to
-            the location of your file `my_css.css` */ 
-}
-
-.bar{
-    border: none !important;
-    border-top: none !important;
-    border-bottom: none !important;
-}
-
 #mainhead button{
     border: none;
     font-size: 2em;
@@ -215,7 +202,7 @@
 }
 
 #seztitle, #evttitle{
-    font-family: "Helvetica Neue";
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 100;
     font-size: 4em;
     color: #fff;
@@ -342,7 +329,6 @@
     font-weight: 600;
     font-size: 1.2em;
     color: #033f66;
-    margin: 30px 0 30px;
 }
 
 #asslocation p i{
@@ -435,7 +421,7 @@
 }
 
 #map{
-    height: 320px;
+    height: 200px;
     width: 100%;
     position: relative;
 }
@@ -747,7 +733,7 @@
 #mapcontrols{
     width: 60px;
     position: absolute;
-    bottom: 25px;
+    top: 10px;
     right: 10px;
     z-index: 19;
 }

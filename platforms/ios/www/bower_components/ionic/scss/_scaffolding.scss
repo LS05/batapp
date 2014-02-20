@@ -13,10 +13,6 @@
 a {
   -webkit-user-drag: none;
   -webkit-tap-highlight-color: transparent;
-
-  &:hover {
-    cursor: pointer;
-  }
 }
 img {
   -webkit-user-drag: none;
@@ -40,7 +36,7 @@ body, .ionic-body {
 
   margin: 0;
   padding: 0;
-
+  
   color: $base-color;
   word-wrap: break-word;
   font-size: $font-size-base;
@@ -48,11 +44,6 @@ body, .ionic-body {
   line-height: $line-height-computed;
   text-rendering: optimizeLegibility;
   -webkit-user-drag: none;
-}
-
-.content {
-  // used for content areas not using the content directive
-  position: relative
 }
 
 .scroll-content {
@@ -74,7 +65,6 @@ body, .ionic-body {
 }
 
 .scroll-view {
-  height: 100%;
   overflow: hidden;
   position: relative;
   //-webkit-perspective: 1000;
@@ -145,12 +135,9 @@ body, .ionic-body {
 // Scroll refresher (for pull to refresh)
 .scroll-refresher {
   overflow: hidden;
-  top: -60px;
+  margin-top: -60px;
   height: 60px;
-  left: 0;
-  right: 0;
-  position: absolute;
-  margin: auto;
+  position: relative;
 
   .icon-refreshing {
     display: none;
@@ -226,7 +213,7 @@ infinite-scroll .scroll-infinite {
   overflow: hidden;
   margin-top: -70px;
   height: 60px;
-  position: relative;
+  position: relative; 
 }
 
 .scroll-infinite-content {
@@ -286,7 +273,7 @@ infinite-scroll.active .scroll-infinite {
 
 // A full screen section with a solid background
 .pane {
-  position: absolute;
+  position: fixed;
   z-index: $z-index-pane;
 }
 .view {
@@ -301,5 +288,4 @@ infinite-scroll.active .scroll-infinite {
   width: 100%;
   height: 100%;
   background-color: #fff;
-  @include translate3d(0,0,0);
 }

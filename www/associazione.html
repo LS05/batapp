@@ -1,12 +1,12 @@
 <pane id="wrap{{sezione}}">
     <div class="bar bar-header" id="header{{sezione}}">
-        <a class="button icon-left ion-chevron-left button-clear button-dark" ng-click="changeView('associazioni')">{{comune | capitalize}}</a>
+        <a class="button icon-left ion-chevron-left button-clear button-dark" ng-click="changeView('{{sezione}}')">{{comune | capitalize}}</a>
     </div>
     <content has-header="true" padded="false" scroll="false">
         <div id="map">
             <google-map location="address" type="road" class="map"></google-map>
         </div>
-        <div style="position:relative; margin-top:30px;">
+        <div style="position:relative;">
             <h1 id="asstitle">{{associazione}}</h1>
         </div>
         <div id="asslocation">

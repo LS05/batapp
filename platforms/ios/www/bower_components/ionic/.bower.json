@@ -1,6 +1,6 @@
 {
   "name": "ionic",
-  "version": "0.9.24",
+  "version": "0.9.20-alpha",
   "homepage": "https://github.com/driftyco/ionic",
   "authors": [
     "Max Lynch <max@drifty.com>",
@@ -9,16 +9,20 @@
   ],
   "description": "Advanced HTML5 hybrid mobile app development framework.",
   "main": [
-    "release/css/ionic.css",
-    "release/fonts/*",
-    "release/js/ionic.js",
-    "release/js/ionic-angular.js"
+    "dist/js/ionic.js",
+    "dist/js/angular/angular.js",
+    "dist/js/angular/angular-animate.js",
+    "dist/js/angular/angular-route.js",
+    "dist/js/angular/angular-touch.js",
+    "dist/js/angular/angular-sanitize.js",
+    "dist/js/ionic-angular.js",
+    "dist/css/ionic.css",
+    "dist/fonts/*"
   ],
   "keywords": [
     "mobile",
     "html5",
     "ionic",
-    "cordova",
     "phonegap",
     "trigger",
     "triggerio",
@@ -31,36 +35,20 @@
   "private": false,
   "ignore": [
     "**/.*",
-    "CONTRIBUTING.md",
-    "Gruntfile.js",
-    "component.json",
-    "config",
-    "examples",
-    "package.json",
-    "release/js/angular",
-    "release/js/angular-ui",
-    "scripts",
+    "node_modules",
+    "bower_components",
+    "components",
     "test",
-    "js/controllers",
-    "js/ext",
-    "js/utils",
-    "js/views",
-    "js/_license.js",
-    "js/ionic.js"
+    "tests"
   ],
-  "dependencies": {
-    "angular": "1.2.10",
-    "angular-animate": "1.2.10",
-    "angular-sanitize": "1.2.10",
-    "angular-ui-router": "0.2.7"
-  },
-  "_release": "0.9.24",
+  "_release": "0.9.20-alpha",
   "_resolution": {
     "type": "version",
-    "tag": "v0.9.24",
-    "commit": "2a0cf66b271ac6af8e46e43c02bd0f3f950bfe54"
+    "tag": "v0.9.20-alpha",
+    "commit": "bbdfb1d19a72cefe0fcc72d4d3ccef174498b556"
   },
   "_source": "git://github.com/driftyco/ionic.git",
   "_target": "~0.9.20-alpha",
-  "_originalSource": "ionic"
+  "_originalSource": "ionic",
+  "_direct": true
 }

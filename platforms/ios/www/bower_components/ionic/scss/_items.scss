@@ -89,9 +89,7 @@
 }
 
 // Link and Button Active States
-.item.active,
-.ionic-pseudo .item:active,
-.item-complex.active .item-content {
+a.item, button.item {
   @include item-active-style($item-default-active-bg, $item-default-active-border);
 
   // Different active themes for <a> and <button> items
@@ -196,7 +194,6 @@ a.item-content {
   text-decoration: none;
 }
 
-.item-text-wrap .item,
 .item-text-wrap,
 .item-text-wrap h1,
 .item-text-wrap h2,
@@ -311,23 +308,15 @@ a.item-content {
   position: absolute;
   top: $item-padding / 2;
   left: $item-padding / 2;
-  min-width: $item-icon-font-size + ($button-border-width * 2);
-  min-height: $item-icon-font-size + ($button-border-width * 2);
-  font-size: $item-button-font-size;
-  line-height: $item-button-line-height;
+  min-width: initial;
+  min-height: $item-icon-font-size;
+  font-size: $item-icon-font-size;
 
-  .icon:before {
+  .icon {
     position: relative;
     left: auto;
     width: auto;
     line-height: $item-icon-font-size - 1;
-  }
-
-  > .button {
-    margin: 0px 2px;
-    min-height: $item-icon-font-size + ($button-border-width * 2);
-    font-size: $item-button-font-size;
-    line-height: $item-button-line-height;
   }
 }
 
@@ -346,12 +335,11 @@ button.item.item-button-right {
   position: absolute;
   top: $item-padding / 2;
   right: $item-padding;
-  min-width: $item-icon-font-size + ($button-border-width * 2);
-  min-height: $item-icon-font-size + ($button-border-width * 2);
-  font-size: $item-button-font-size;
-  line-height: $item-button-line-height;
+  min-width: initial;
+  min-height: $item-icon-font-size;
+  font-size: $item-icon-font-size;
 
-  .icon:before {
+  .icon {
     position: relative;
     left: auto;
     width: auto;
@@ -360,10 +348,8 @@ button.item.item-button-right {
 
   > .button {
     margin: 0px 2px;
-    min-width: $item-icon-font-size + ($button-border-width * 2);
-    min-height: $item-icon-font-size + ($button-border-width * 2);
-    font-size: $item-button-font-size;
-    line-height: $item-button-line-height;
+    min-height: $item-icon-font-size;
+    font-size: $item-icon-font-size;
   }
 }
 
