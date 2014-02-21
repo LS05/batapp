@@ -277,14 +277,11 @@ batApp.controller('mainCtrl', function($scope, $ionicPlatform, $state) {
     StatusBar.hide();
   });*/
 
-  $scope.espclass = "attivo";
-  $scope.clclass = "nactive";
+  $scope.espActive = true;
+  $scope.clActive = false;
 
   $scope.espandi = function(){
-    $scope.mapsize = 'evtmap';
-    $scope.mapdisp = 'hidmap';
-    $scope.espclass = "nactive";
-    $scope.clclass = "attivo";
+    $scope.espActive = !$scope.espActive;
     setTimeout(reloadMap, 1000);
     function reloadMap(){
       google.maps.event.trigger(map, 'resize');
@@ -292,10 +289,7 @@ batApp.controller('mainCtrl', function($scope, $ionicPlatform, $state) {
   }
 
   $scope.chiudi = function(){
-    $scope.mapsize = 'stmap';
-    $scope.mapdisp = 'mapblock';
-    $scope.espclass = "attivo";
-    $scope.clclass = "nactive";
+    $scope.clActive = false;
     setTimeout(reloadMap, 400);
     function reloadMap(){
       google.maps.event.trigger(map, 'resize');
@@ -317,17 +311,30 @@ batApp.controller('mainCtrl', function($scope, $ionicPlatform, $state) {
     { 
       id: '1',
       nome: 'Teatro Sospeso',
-      posizione: 'Via Castel del Monte, 80'
+      posizione: 'Via Castel del Monte, 80',
+      descrizone: ''
     },
     { 
       id: '2',
       nome: 'Associazione Trani',
-      posizione: 'Via Trani, 54'
+      posizione: 'Via Trani, 54',
+      descrizone: ''
+    }
+  ];
+
+  $scope.eventi = [
+    { 
+      id: '1',
+      nome: 'La storia di Andria',
+      posizione: 'Via Castel del Monte, 80',
+      orario: '20:30',
+      descrizone: ''
     },
     { 
-      id: '3',
-      nome: 'Associazione del Borgo',
-      posizione: 'Via Trani, 54'
+      id: '2',
+      nome: 'Associazione Trani',
+      posizione: 'Via Trani, 54',
+      descrizone: ''
     }
   ];
 

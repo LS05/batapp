@@ -7,10 +7,17 @@
             <!--<div class="expmap expevt"><i class="ion-close-round"></i>Chiudi</div>-->
             <!--<div id="mapovrlay" ng-click="espandi()" class="{{mapdisp}}"></div>-->
             <div id="mapcontrols">
-                <button id="btnespandi" class="button button-energized {{espclass}}" ng-click="espandi()">
+                <div 
+                    id="btnespandi"
+                    class="button button-energized"
+                    ng-class="{'attivo': espActive, 'nactive': !espActive}"
+                    ng-click="espandi()">
                     <i class="ion-arrow-expand"></i>
-                </button>
-                <button id="btnclose" class="button button-energized {{clclass}}" ng-click="chiudi()">
+                </div>
+                <button 
+                    id="btnclose"
+                    class="button button-energized nactive" 
+                    ng-click="chiudi()">
                     <i class="ion-arrow-shrink"></i>
                 </button>
             </div>
@@ -46,7 +53,7 @@
                 <div id="descrizione">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor, augue vel varius posuere, mauris tortor ultrices ipsum, vitae bibend.</p>
                 </div>
-                <a href="maps://?q=Via Trani, Andria" target="_system">Cupertino</a>
+                <!--<a href="maps://?q=Via Trani, Andria" target="_system">Cupertino</a>-->
             </div>
         </scroll>
     </content>
