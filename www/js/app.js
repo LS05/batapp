@@ -1,4 +1,4 @@
-var batApp = angular.module('batapp', ['ionic', 'ui.router', 'ngRoute']);
+var batApp = angular.module('batapp', ['ionic']);
 
 batApp.config(function($stateProvider, $urlRouterProvider) {
 
@@ -30,7 +30,7 @@ batApp.config(function($stateProvider, $urlRouterProvider) {
     })
     .state('listaimpgiov', {
       url: "/sezassoc/imprenditoriagiovanile/:comune",
-      templateUrl: "listaimpgiov.html",
+      templateUrl: "listaassociazioni.html",
       controller: 'ListaImpGiovController'
     })
     .state('associazioni', {
@@ -70,7 +70,7 @@ batApp.config(function($stateProvider, $urlRouterProvider) {
     })
     .state('curiosita', {
       url: "/curiosita",
-      templateUrl: "sezione.html",
+      templateUrl: "curiosita.html",
       controller: 'CuriositaController'
     })
     .state('listacuriosita', {
@@ -328,12 +328,14 @@ batApp.controller('mainCtrl', function($scope, $ionicPlatform, $state) {
       nome: 'La storia di Andria',
       posizione: 'Via Castel del Monte, 80',
       orario: '20:30',
+      idassociazione: '1',
       descrizone: ''
     },
     { 
       id: '2',
       nome: 'Associazione Trani',
       posizione: 'Via Trani, 54',
+      idassociazione: '1',
       descrizone: ''
     }
   ];

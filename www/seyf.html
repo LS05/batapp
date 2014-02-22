@@ -1,7 +1,11 @@
 <pane id="wrapseyf">
-    <div class="bar bar-header" id="header{{sezione}}">
-        <a class="button icon-left ion-chevron-left button-clear button-dark" ng-click="changeView('home')">Home</a>
-    </div>
+    <ion-header-bar
+      title="headerTitle"
+      left-buttons="leftButtons"
+      right-buttons="rightButtons"
+      type="bar-positive"
+      align-title="center">
+    </ion-header-bar>
     <content has-header="true" padded="false" scroll="true">
         <div>
             <h1 id="seyftitle">Seyf</h1>

@@ -19,6 +19,10 @@
             the location of your file `my_css.css` */ 
 }
 
+body{
+    background-color: #1c242d;
+}
+
 .bar{
     border: none !important;
     border-top: none !important;
@@ -79,16 +83,28 @@
     color: #fff;
 }
 
-#wraptempolibero{
+#wraptempolibero, #headertempolibero{
     background-color: #21928b;
 }
 
-#wrapsalute{
+#headertempolibero a{
+    color: #fff;
+}
+
+#wrapsalute, #headersalute{
     background-color: #ca441a;
 }
 
-#wrapcuriosita{
+#headersalute a{
+    color: #fff;
+}
+
+#wrapcuriosita, #headercuriosita, #wrapcuriosita #comune{
     background-color: #f47d1f;
+}
+
+#headercuriosita a{
+    color: #fff;
 }
 
 #wrapsalute #comune{
@@ -178,8 +194,12 @@
     color: #fff;
 }
 
-#wrapimprenditoriagiovanile, #wrapimprenditoriagiovanile #comune{
+#wrapimprenditoriagiovanile, #headerimprenditoriagiovanile, #wrapimprenditoriagiovanile #comune{
     background-color: #3a97d3;
+    color: #fff;
+}
+
+#headerimprenditoriagiovanile a{
     color: #fff;
 }
 
@@ -209,8 +229,12 @@
     color:#064f25;
 }
 
-#wrapeventi{
+#wrapeventi, #headereventi{
     background-color: #f29c1f;
+    color: #fff;
+}
+
+#headereventi a{
     color: #fff;
 }
 
@@ -677,22 +701,28 @@
 
 #wrapseyf{
     font-family: 'Open Sans';
-    color: #fff;
-    background-color: #ca222b;
-    background-image: url('../img/seyf.png');
+    color: #333332;
+    background-color: #fff;
+    /*background-image: url('../img/seyf.png');*/
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+#headerseyf, #headerseyf a{
+    color: #fff;
+    background-color: #ca222b;
 }
 
 #seyftitle{
     font-family: 'Open Sans Bold';
     text-align: center;
     font-size: 6em;
-    color: #fff;
+    color: #ca222b;
+    padding: 20px;
 }
 
 .seyfmain{
-    padding: 5px;
+    padding: 5px 20px;
     font-size: 1.2em;
     line-height: 1.4;
     margin-top: 10px;
@@ -701,7 +731,6 @@
 .seyfmain span{
     font-family: 'Open Sans Bold';
     font-size: 1.2em;
-    color: #fff;
     display: block;
     float: left;
     padding-right: 10px;

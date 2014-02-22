@@ -7,9 +7,9 @@
         <h1 id="evtsub">Eventi</h1>
         <scroll id="scroller" class="scroll" direction="y">
             <ul id="listaeventi" class="list">
-                <li ng-repeat="assoc in associazioni">
+                <li ng-repeat="evento in eventi">
                     <a ng-href="#/sezassoc/{{sezione}}/{{comune}}/{{associazione}}/{{idass}}/eventi/{{assoc.nome}}">
-                        <p class="nome">{{assoc.nome}}</p>
+                        <p class="nome">{{evento.nome}}</p>
                         <span class="posiz"><i class="ion-location"></i>{{assoc.posizione}}</span>
                         <span class="time"><i class="ion-clock"></i>19:00</span>
                     </a>
