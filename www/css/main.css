@@ -23,6 +23,13 @@ body{
     background-color: #1c242d;
 }
 
+#descass div{
+    text-align:center;
+    display:block;
+    width:100%;
+    font-weight: 600;
+}
+
 .bar{
     border: none !important;
     border-top: none !important;
@@ -44,11 +51,34 @@ body{
     background: none;
 }
 
+#infoseyf{
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+#infoseyf p{
+    margin: 20px 0;
+}
+
+#infoseyf i{
+    margin-right: 10px;
+    color: #ca232c;
+}
+
 #back{
     font-size: 2em;
     line-height: 31px;
     top: 5px;
     left: 10px;
+}
+
+#noeventi{
+    color: #fff;
+    font-size: 1.4em;
+    border: none;
+    text-align: center;
 }
 
 #header{
@@ -580,7 +610,7 @@ body{
     font-family: 'Open Sans';
     padding-bottom: 50px;
     font-size: 1.2em;
-    line-height: 1.4;
+    line-height: 1.5;
     padding: 0 10px;
 }
 
@@ -590,6 +620,7 @@ body{
     overflow: visible;
     background-color: #fbb44d;
     height: 100%;
+    padding-bottom: 50px;
 }
 
 #evtscroll #descrizione{

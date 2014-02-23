@@ -1,12 +1,12 @@
-<ion-view id="wrap{{sezione}}">
+<ion-view id="wrap{{sezione}}" title="titleSezione">
     <ion-content has-header="true" padded="false" scroll="false">
         <div>
             <h1 id="seztitle">{{titolo}}</h1>
         </div>
         <scroll direction="y" id="scroller">
             <ion-list id="listacomuni">
-                <ion-item ng-repeat="comune in comuni" ng-href="#/sezassoc/{{sezione}}/{{comune.title|lowercase}}">
-                    {{comune.title}}
+                <ion-item ng-repeat="comune in comuni" ng-href="#/sezassoc/{{sezione}}/{{comune|lowercase}}">
+                    {{comune}}
                 </ion-item>
             </ion-list>
         </scroll>

@@ -1,18 +1,19 @@
 <ion-view id="wrap{{sezione}}" title="titleEventi">
     <ion-content has-header="true" padded="true" scroll="false">
         <div id="titolosezione">
-            <h1 id="evttitle">{{associazione}}</h1>
+            <h1 id="evttitle">{{associazione.nome}}</h1>
         </div>
         <ion-scroll id="" class="scroll" direction="y">
             <ion-list id="listaeventi" class="list">
                 <ion-item 
                     ng-repeat="evento in eventi"
-                    ng-href="#/sezassoc/{{sezione}}/{{comune}}/{{associazione}}/{{idass}}/eventi/{{assoc.nome}}"
+                    ng-href="#/sezassoc/{{sezione}}/{{comune}}/{{associazione.nome}}/{{idass}}/eventi/{{evento.nome}}/{{evento.id}}"
                 >
                     <p class="nome">{{evento.nome}}</p>
                     <span class="posiz"><i class="ion-location"></i>{{evento.posizione}}</span>
-                    <span class="time"><i class="ion-clock"></i>19:00</span>
+                    <span class="time"><i class="ion-clock"></i>{{evento.orario}}</span>
                 </ion-item>
+                <ion-item ng-show="!eventi.length" id="noeventi">L'associazione <br />non ha organizzato ancora nessun evento</ion-item>
             </ion-list>
         </ion-scroll>
     </ion-content>

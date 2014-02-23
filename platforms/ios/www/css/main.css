@@ -23,6 +23,13 @@ body{
     background-color: #1c242d;
 }
 
+#descass div{
+    text-align:center;
+    display:block;
+    width:100%;
+    font-weight: 600;
+}
+
 .bar{
     border: none !important;
     border-top: none !important;
@@ -44,11 +51,34 @@ body{
     background: none;
 }
 
+#infoseyf{
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+#infoseyf p{
+    margin: 20px 0;
+}
+
+#infoseyf i{
+    margin-right: 10px;
+    color: #ca232c;
+}
+
 #back{
     font-size: 2em;
     line-height: 31px;
     top: 5px;
     left: 10px;
+}
+
+#noeventi{
+    color: #fff;
+    font-size: 1.4em;
+    border: none;
+    text-align: center;
 }
 
 #header{
@@ -67,7 +97,6 @@ body{
 #listaassociazioni .nome{
     color: #fff;
     font-size: 1.4em;
-    font-weight: 800;
 }
 
 .list .posiz{
@@ -145,6 +174,11 @@ body{
     background-color: #f47d1f;
 }
 
+#wrapcuriosita #listacomuni .item, #wrapcuriosita #listaassociazioni .item{
+    border: 1px solid #d76a14;
+    border-top: none;
+}
+
 #headercuriosita a{
     color: #fff;
 }
@@ -180,11 +214,16 @@ body{
     color: #ca441a;
 }
 
-#wrapambiente .list li .posiz{
+#wrapambiente .item .nome{
+    font-size: 1.4em;
+    color: #fff;
+}
+
+#wrapambiente .item .posiz{
     color: #074f25;
 }
 
-#wrapambiente .list li .time{
+#wrapambiente .item .time{
     color: #074f25;
 }
 
@@ -194,15 +233,13 @@ body{
     border-top: none;
 }
 
-#wrapimprenditoriagiovanile .list li .posiz{
+#wrapimprenditoriagiovanile .list .item .posiz{
     color: #033f66;
 }
 
-#wrapimprenditoriagiovanile .list li .time{
+#wrapimprenditoriagiovanile .list .item .time{
     color: #033f66;
 }
-
-
 
 #wraptempolibero #comune{
     background-color: #21928b;
@@ -213,11 +250,16 @@ body{
     border-top: none;
 }
 
-#wraptempolibero .list li .posiz, #wraptempolibero #asslocation p{
+#wraptempolibero #listaeventi .nome{
+    font-size: 1.4em;
+    color: #fff;
+}
+
+#wraptempolibero .list .item .posiz, #wraptempolibero #asslocation p{
     color: #043633;
 }
 
-#wraptempolibero .list li .time{
+#wraptempolibero .list .item .time{
     color: #043633;
 }
 
@@ -242,6 +284,11 @@ body{
 }
 
 #headerimprenditoriagiovanile a{
+    color: #fff;
+}
+
+#wrapimprenditoriagiovanile .item .nome{
+    font-size: 1.4em;
     color: #fff;
 }
 
@@ -276,6 +323,20 @@ body{
     color: #fff;
 }
 
+#wrapeventi .item .nome{
+    color: #fff;
+    font-size: 1.4em;
+}
+
+#wrapeventi .item .posiz{
+    color: #791307;
+}
+
+#wrapeventi .item{
+    border: 1px solid #dd8b14;
+    border-top: none;
+}
+
 #headereventi a{
     color: #fff;
 }
@@ -304,6 +365,7 @@ body{
     position: relative;
     z-index: 1000;
     padding-bottom: 5px;
+    margin: 30px 0;
 }
 
 #comune h1, #titolosezione h1{
@@ -332,7 +394,6 @@ body{
     font-family: 'Open Sans';
     color: #fff;
     margin-bottom: 2px;
-    font-weight: 600;
     font-size: 1.4em;
 }
 
@@ -340,17 +401,13 @@ body{
     font-size: 1em;
 }
 
-#wrapcultura .item .posiz, #wrapcultura #asslocation p{
+#wrapcultura .item .posiz{
+    color: #791307;    
+}
+
+#wrapcultura #asslocation p{
     font-weight: 600;
     color: #791307;
-}
-
-#wrapsalute .list li .posiz, #wrapsalute #assolocation p{
-    color: #550a01;
-}
-
-#wrapsalute .list li .time{
-    color: #550a01;
 }
 
 .posiz .ion-location{
@@ -407,6 +464,19 @@ body{
 #asslocation p i{
     font-size: 1.2em;
     margin-right: 5px;
+}
+
+#wrapsalute .item .nome{
+    color: #fff;
+    font-size: 1.4em;
+}
+
+#wrapsalute .item .posiz, #wrapsalute #asslocation p{
+    color: #550a01;
+}
+
+#wrapsalute .list li .time{
+    color: #550a01;
 }
 
 #btninfo{
@@ -468,6 +538,7 @@ body{
 #wrapevento{
     font-family: 'Open Sans';
     text-align: center;
+    background-color: #f29c1f;
 }
 
 #data{
@@ -539,7 +610,7 @@ body{
     font-family: 'Open Sans';
     padding-bottom: 50px;
     font-size: 1.2em;
-    line-height: 1.4;
+    line-height: 1.5;
     padding: 0 10px;
 }
 
@@ -549,6 +620,7 @@ body{
     overflow: visible;
     background-color: #fbb44d;
     height: 100%;
+    padding-bottom: 50px;
 }
 
 #evtscroll #descrizione{

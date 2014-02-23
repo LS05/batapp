@@ -24,31 +24,31 @@
             <div class="row">
                 <div class="col coldata">                
                     <div id="data">
-                        <div id="giorno">27</div>
-                        <div id="mese">mar</div>
+                        <div id="giorno">{{evento.data[0]}}</div>
+                        <div id="mese">{{evento.data[1]}}</div>
                     </div>                
                 </div>
             </div>
             <div class="row maininfo">
                 <div class="col" id="luogo">
                     <i class="ion-clock"></i>
-                    <p>19:15</p>
+                    <p>{{evento.orario}}</p>
                 </div>
             </div>
             <div class="row maininfo">
                 <div class="col" id="luogo">
                     <i class="ion-location"></i>
-                    <p>Questo è il luogo dell'evento</p>
+                    <p>{{evento.posizione}}</p>
                 </div>
             </div>
             <div class="row">
                 <div id="nome">
-                    <p>Questo è il nome dell'evento</p>
+                    <p>{{evento.nome}}</p>
                 </div>
             </div>
             <div class="row">
                 <div id="descrizione">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor, augue vel varius posuere, mauris tortor ultrices ipsum, vitae bibend.</p>
+                    <p>{{evento.descrizione}}</p>
                 </div>
                 <!--<a href="maps://?q=Via Trani, Andria" target="_system">Cupertino</a>-->
             </div>

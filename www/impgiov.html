@@ -5,8 +5,8 @@
         </div>
         <scroll direction="y" id="scroller">
             <ion-list id="listacomuni">
-                <ion-item ng-repeat="comune in comuni" ng-href="#/sezassoc/{{sezione}}/{{comune.title|lowercase}}">
-                    {{comune.title}}
+                <ion-item ng-repeat="comune in comuni" ng-href="#/sezassoc/{{sezione}}/{{comune|lowercase}}">
+                    {{comune}}
                 </ion-item>
             </ion-list>
         </scroll>

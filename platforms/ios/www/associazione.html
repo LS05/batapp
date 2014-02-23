@@ -1,18 +1,18 @@
 <ion-view id="wrap{{sezione}}" title="titleAss">
-    <ion-content has-header="true" padded="false" scroll="false">
+    <ion-content has-header="true" padded="false" scroll="true">
         <div id="map">
             <google-map location="address" type="road" class="map"></google-map>
         </div>
         <div style="position:relative; margin-top:30px;">
-            <h1 id="asstitle">{{associazione}}</h1>
+            <h1 id="asstitle">{{associazione.nome}}</h1>
         </div>
         <div id="asslocation">
-            <p ng-repeat="assoc in associazioni | filter:{id:idass}"><i class="ion-location"></i>{{assoc.posizione}}</p>
+            <p><i class="ion-location"></i>{{associazione.posizione}}</p>
         </div>
         <div class="row">
             <div class="col" id="btninfo">
                 <a 
-                    ng-href="#/sezassoc/{{sezione}}/{{comune}}/{{associazione}}/{{idass}}/info"
+                    ng-href="#/sezassoc/{{sezione}}/{{comune}}/{{associazione.nome}}/{{idass}}/info"
                     class="btnass btninfo"
                 >
                     <i class="ion-plus-round"></i><p>Info</p>
@@ -20,7 +20,7 @@
             </div>
             <div class="col" id="btneventi">
                 <a 
-                    ng-href="#/sezassoc/{{sezione}}/{{comune}}/{{associazione}}/{{idass}}/eventi"
+                    ng-href="#/sezassoc/{{sezione}}/{{comune}}/{{associazione.nome}}/{{idass}}/eventi"
                     class="btnass btneventi"
                 >
                     <i class="ion-calendar"></i><p>Eventi</p>
