@@ -1,5 +1,5 @@
 <ion-view id="wrap{{sezione}}">
-    <ion-content has-header="true" padded="false" scroll="false">
+    <ion-content has-header="true" padded="false" scroll="true">
         <div id="map" class="{{animation}} {{mapsize}}">
             <!--<div class="expmap expevt"><i class="ion-close-round"></i>Chiudi</div>-->
             <!--<div id="mapovrlay" ng-click="espandi()" class="{{mapdisp}}"></div>-->
@@ -20,7 +20,8 @@
             </div>
             <google-map location="address" type="road" class="map"></google-map>
         </div>
-        <ion-scroll class="scroll" direction="y" id="evtscroll" scroll="false">
+        <div id="evtscroll">
+        <!--<ion-scroll class="scroll" direction="y" id="evtscroll" scroll="false">-->
             <div class="row">
                 <div class="col coldata">                
                     <div id="data">
@@ -52,6 +53,7 @@
                 </div>
                 <!--<a href="maps://?q=Via Trani, Andria" target="_system">Cupertino</a>-->
             </div>
-        </ion-scroll>
+        </div>
+        <!--</ion-scroll>-->
     </ion-content>
 </ion-view>

@@ -53,9 +53,9 @@ body{
 
 #infoseyf{
     text-align: center;
-    font-size: 1.4em;
-    font-weight: 600;
+    font-size: 1.2em;
     margin: 30px 0;
+    padding: 5px 20px;
 }
 
 #infoseyf p{
@@ -65,6 +65,7 @@ body{
 #infoseyf i{
     margin-right: 10px;
     color: #ca232c;
+    font-size: 1.4em;
 }
 
 #back{
@@ -618,9 +619,8 @@ body{
     position: relative;
     z-index: 20;
     overflow: visible;
-    background-color: #fbb44d;
+    padding-bottom: 100px;
     height: 100%;
-    padding-bottom: 50px;
 }
 
 #evtscroll #descrizione{

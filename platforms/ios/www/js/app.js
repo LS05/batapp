@@ -503,6 +503,7 @@ batApp.controller('EventoCtrl', function($scope, $stateParams, $state, dataFacto
   $scope.evento = dataFactory.getEvento($stateParams.eventoid);
   $scope.associazione = dataFactory.getAssociazione($scope.evento.idassociazione);
   $scope.address = $scope.evento.posizione;
+  $scope.titleEventi = "Evento";
 });
 
 batApp.controller('mainCtrl', function($scope, $stateParams, $ionicPlatform, $state, dataFactory) {
