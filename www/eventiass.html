@@ -1,20 +1,19 @@
-<pane id="wrap{{sezione}}">
-    <div class="bar bar-header" id="header{{sezione}}">
-        <a class="button icon-left ion-chevron-left button-clear button-dark" ng-click="changeView('associazione')">Indietro</a>
-    </div>
-    <content has-header="true" padded="true" scroll="false">
-        <h1 id="evttitle" ng-repeat="assoc in associazioni | filter:{id:idass}">{{assoc.nome}}</h1>
-        <h1 id="evtsub">Eventi</h1>
-        <scroll id="scroller" class="scroll" direction="y">
-            <ul id="listaeventi" class="list">
-                <li ng-repeat="evento in eventi">
-                    <a ng-href="#/sezassoc/{{sezione}}/{{comune}}/{{associazione}}/{{idass}}/eventi/{{assoc.nome}}">
-                        <p class="nome">{{evento.nome}}</p>
-                        <span class="posiz"><i class="ion-location"></i>{{assoc.posizione}}</span>
-                        <span class="time"><i class="ion-clock"></i>19:00</span>
-                    </a>
-                </li>
-            </ul>
-        </scroll>
-    </content>
-</pane>
+<ion-view id="wrap{{sezione}}" title="titleEventi">
+    <ion-content has-header="true" padded="true" scroll="false">
+        <div id="titolosezione">
+            <h1 id="evttitle">{{associazione}}</h1>
+        </div>
+        <ion-scroll id="" class="scroll" direction="y">
+            <ion-list id="listaeventi" class="list">
+                <ion-item 
+                    ng-repeat="evento in eventi"
+                    ng-href="#/sezassoc/{{sezione}}/{{comune}}/{{associazione}}/{{idass}}/eventi/{{assoc.nome}}"
+                >
+                    <p class="nome">{{evento.nome}}</p>
+                    <span class="posiz"><i class="ion-location"></i>{{evento.posizione}}</span>
+                    <span class="time"><i class="ion-clock"></i>19:00</span>
+                </ion-item>
+            </ion-list>
+        </ion-scroll>
+    </ion-content>
+</ion-view>

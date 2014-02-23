@@ -1,17 +1,14 @@
-<ion-view id="wrap{{sezione}}">
+<ion-view id="wrap{{sezione}}" title="titleSezione" left-buttons="leftButtons">
     <ion-content has-header="true" padded="false" scroll="false">
         <div>
             <h1 id="seztitle">{{sezione | capitalize}}</h1>
         </div>
-        <scroll direction="y" id="scroller">
+        <ion-scroll direction="y" id="scroller">
             <ion-list id="listacomuni">
-                <ion-item ng-repeat="comune in comuni">
-                    <a ng-href="#/sezassoc/{{sezione}}/{{comune.title|lowercase}}">
-                        {{comune.title}}
-                    </a>
+                <ion-item ng-repeat="comune in comuni" ng-href="#/sezassoc/{{sezione}}/{{comune.title|lowercase}}">
+                    {{comune.title}}
                 </ion-item>
             </ion-list>
-        </scroll>
-    </content>
-    <div ng-init="testFunction('scroller')"></div>
+        </ion-scroll>
+    </ion-content>
 </ion-view>

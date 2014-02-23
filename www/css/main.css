@@ -29,6 +29,15 @@ body{
     border-bottom: none !important;
 }
 
+.bar.bar-light .title{
+    color: #fff;
+    font-weight: bold;
+}
+
+.button .icon {
+    line-height: 32px;
+}
+
 #mainhead button{
     border: none;
     font-size: 2em;
@@ -42,6 +51,38 @@ body{
     left: 10px;
 }
 
+#header{
+    background: none;
+}
+
+#header button{
+    color: #fff;
+}
+
+#listaeventi .item, #listaassociazioni .item, #listaeventi .item a, #listaassociazioni .item a{
+    background: none;
+    border-top: none;
+}
+
+#listaassociazioni .nome{
+    color: #fff;
+    font-size: 1.4em;
+}
+
+.list .posiz{
+    color: #fff;
+}
+
+.list .time{
+    color: #791307;
+    font-weight: 600;
+    display: block;
+}
+
+.list .time i{
+    margin-right: 3px;
+}
+
 .scroll{
     width: 100%;
     height: 100%;
@@ -53,21 +94,21 @@ body{
     line-height: 1.8;
 }
 
-#listacomuni li{
+#listacomuni .item{
     color: #fff;
     background: none;
     text-align: center;
     border: none;
-    margin-top: 20px;
 }
 
-#listacomuni li a{
+#listacomuni .item a{
     font-family: 'Open Sans Bold';
     background: none;
-    font-size: 2.2em;
+    font-size: 1.5em;
     color: #fff;
     display: block;
     text-decoration: none;
+    padding: 20px 0;
 }
 
 #wrapcultura, #wrapcultura .buttonwrap, #headercultura{
@@ -103,6 +144,11 @@ body{
     background-color: #f47d1f;
 }
 
+#wrapcuriosita #listacomuni .item, #wrapcuriosita #listaassociazioni .item{
+    border: 1px solid #d76a14;
+    border-top: none;
+}
+
 #headercuriosita a{
     color: #fff;
 }
@@ -119,17 +165,17 @@ body{
     z-index: 9999;
 }
 
-#wrapcultura .list li{
+#wrapcultura .item{
     border: 1px solid #cd3627;
     border-top: none;
 }
 
-#wrapambiente .list li{
+#wrapambiente .item{
     border: 1px solid #19964f;
     border-top: none;
 }
 
-#wrapsalute .list li{
+#wrapsalute .item{
     border: 1px solid #b23711;
     border-top: none;
 }
@@ -138,44 +184,52 @@ body{
     color: #ca441a;
 }
 
-#wrapambiente .list li .posiz{
+#wrapambiente .item .nome{
+    font-size: 1.4em;
+    color: #fff;
+}
+
+#wrapambiente .item .posiz{
     color: #074f25;
 }
 
-#wrapambiente .list li .time{
+#wrapambiente .item .time{
     color: #074f25;
 }
 
 
-#wrapimprenditoriagiovanile .list li{
+#wrapimprenditoriagiovanile .item{
     border: 1px solid #2c83ba;
     border-top: none;
 }
 
-#wrapimprenditoriagiovanile .list li .posiz{
+#wrapimprenditoriagiovanile .list .item .posiz{
     color: #033f66;
 }
 
-#wrapimprenditoriagiovanile .list li .time{
+#wrapimprenditoriagiovanile .list .item .time{
     color: #033f66;
 }
-
-
 
 #wraptempolibero #comune{
     background-color: #21928b;
 }
 
-#wraptempolibero .list li{
+#wraptempolibero .item{
     border: 1px solid #16746e;
     border-top: none;
 }
 
-#wraptempolibero .list li .posiz, #wraptempolibero #asslocation p{
+#wraptempolibero #listaeventi .nome{
+    font-size: 1.4em;
+    color: #fff;
+}
+
+#wraptempolibero .list .item .posiz, #wraptempolibero #asslocation p{
     color: #043633;
 }
 
-#wraptempolibero .list li .time{
+#wraptempolibero .list .item .time{
     color: #043633;
 }
 
@@ -203,7 +257,12 @@ body{
     color: #fff;
 }
 
-#wrapimprenditoriagiovanile #listaassociazioni li{
+#wrapimprenditoriagiovanile .item .nome{
+    font-size: 1.4em;
+    color: #fff;
+}
+
+#wrapimprenditoriagiovanile #listaassociazioni .item{
     border: 1px solid #2c83ba;
     border-left: none;
     border-right: none;
@@ -234,6 +293,20 @@ body{
     color: #fff;
 }
 
+#wrapeventi .item .nome{
+    color: #fff;
+    font-size: 1.4em;
+}
+
+#wrapeventi .item .posiz{
+    color: #791307;
+}
+
+#wrapeventi .item{
+    border: 1px solid #dd8b14;
+    border-top: none;
+}
+
 #headereventi a{
     color: #fff;
 }
@@ -262,16 +335,15 @@ body{
     position: relative;
     z-index: 1000;
     padding-bottom: 5px;
-    height: 120px;
+    margin: 30px 0;
 }
 
-#comune h1{
+#comune h1, #titolosezione h1{
     font-weight: 100;
     color: #fff;
-    font-size: 3.5em;
+    font-size: 3em;
     text-align: center;
     margin: 0px;
-    padding-top: 50px;
 }
 
 .list li{
@@ -288,38 +360,28 @@ body{
     padding: 10px;
 }
 
-.list li .nome{
+#wrapcultura .item .nome{
     font-family: 'Open Sans';
     color: #fff;
     margin-bottom: 2px;
-    font-weight: 600;
+    font-size: 1.4em;
 }
 
-.list li .posiz, #wrapcultura #asslocation p{
+.item .posiz{
+    font-size: 1em;
+}
+
+#wrapcultura .item .posiz{
+    color: #791307;    
+}
+
+#wrapcultura #asslocation p{
     font-weight: 600;
     color: #791307;
-}
-
-#wrapsalute .list li .posiz, #wrapsalute #assolocation p{
-    color: #550a01;
-}
-
-#wrapsalute .list li .time{
-    color: #550a01;
 }
 
 .posiz .ion-location{
     margin-right: 5px;
-}
-
-.list .time{
-    color: #791307;
-    font-weight: 600;
-    display: block;
-}
-
-.list .time i{
-    margin-right: 3px;
 }
 
 .mnitem{
@@ -372,6 +434,19 @@ body{
 #asslocation p i{
     font-size: 1.2em;
     margin-right: 5px;
+}
+
+#wrapsalute .item .nome{
+    color: #fff;
+    font-size: 1.4em;
+}
+
+#wrapsalute .item .posiz, #wrapsalute #asslocation p{
+    color: #550a01;
+}
+
+#wrapsalute .list li .time{
+    color: #550a01;
 }
 
 #btninfo{
@@ -433,6 +508,7 @@ body{
 #wrapevento{
     font-family: 'Open Sans';
     text-align: center;
+    background-color: #f29c1f;
 }
 
 #data{

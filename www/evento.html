@@ -1,8 +1,9 @@
-<pane id="wrapevento">
-    <content has-header="false" padded="false" scroll="false">
+<ion-view id="wrapevento">
+    <ion-content has-header="true" padded="false" scroll="false">
         <div id="map" class="{{animation}} {{mapsize}}">
             <!--<div class="expmap expevt"><i class="ion-close-round"></i>Chiudi</div>-->
-            <div id="mapovrlay" ng-click="espandi()" class="{{mapdisp}}"></div>
+            <!--<div id="mapovrlay" ng-click="espandi()" class="{{mapdisp}}"></div>
+
             <div id="mapcontrols">
                 <button id="btnespandi" class="button button-energized {{espclass}}" ng-click="espandi()">
                     <i class="ion-arrow-expand"></i>
@@ -10,10 +11,10 @@
                 <button id="btnclose" class="button button-energized {{clclass}}" ng-click="chiudi()">
                     <i class="ion-arrow-shrink"></i>
                 </button>
-            </div>
+            </div>-->
             <google-map location="address" type="road" class="map"></google-map>
         </div>
-        <scroll class="scroll" direction="y" id="evtscroll">
+        <ion-scroll class="scroll" direction="y" id="evtscroll">
             <div class="row">
                 <div class="col coldata">                
                     <div id="data">
@@ -49,6 +50,6 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor, augue vel varius posuere, mauris tortor ultrices ipsum, vitae bibend.</p>
                 </div>
             </div>
-        </scroll>
-    </content>
-</pane>
+        </ion-scroll>
+    </ion-content>
+</ion-view>

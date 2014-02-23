@@ -1,17 +1,14 @@
-<pane id="wrap{{sezione | lwnowhitespace}}">
-    <content has-header="false" padded="false" scroll="false">
-        <a ng-click="doTheBack()" id="back"><i class="ion-arrow-left-c"></i></a>
+<ion-view id="wrapcuriosita">
+    <ion-content has-header="true" padded="false" scroll="true">
         <div id="comune">
-            <h1 class="nomecomune">{{comune | capitalize}}</h1>asdadas
+            <h1 class="nomecomune">{{comune | capitalize}}</h1>
         </div>
-        <scroll id="scroller" class="scroll" direction="y">
-            <ul id="listaassociazioni" class="list">
-                <li ng-repeat="assoc in associazioni">
-                    <a ng-href="#/sezassoc/{{sezione}}/{{comune}}/{{assoc.nome}}/{{assoc.id}}">
-                        <p class="nome">{{assoc.nome}}</p>
-                    </a>
-                </li>
-            </ul>
-        </scroll>
-    </content>
-</pane>
+        <ion-scroll id="scroller" class="scroll" direction="y">
+            <ion-list id="listaassociazioni" class="list">
+                <ion-item ng-repeat="assoc in associazioni" ng-href="#/curiosita/{{comune}}/{{assoc.nome}}/{{assoc.id}}">
+                    <p class="nome">{{assoc.nome}}</p>
+                </ion-item>
+            </ion-list>
+        </ion-scroll>
+    </ion-content>
+</ion-view>

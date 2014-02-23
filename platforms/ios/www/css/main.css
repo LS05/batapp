@@ -19,10 +19,23 @@
             the location of your file `my_css.css` */ 
 }
 
+body{
+    background-color: #1c242d;
+}
+
 .bar{
     border: none !important;
     border-top: none !important;
     border-bottom: none !important;
+}
+
+.bar.bar-light .title{
+    color: #fff;
+    font-weight: bold;
+}
+
+.button .icon {
+    line-height: 32px;
 }
 
 #mainhead button{
@@ -38,6 +51,39 @@
     left: 10px;
 }
 
+#header{
+    background: none;
+}
+
+#header button{
+    color: #fff;
+}
+
+#listaeventi .item, #listaassociazioni .item, #listaeventi .item a, #listaassociazioni .item a{
+    background: none;
+    border-top: none;
+}
+
+#listaassociazioni .nome{
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 800;
+}
+
+.list .posiz{
+    color: #fff;
+}
+
+.list .time{
+    color: #791307;
+    font-weight: 600;
+    display: block;
+}
+
+.list .time i{
+    margin-right: 3px;
+}
+
 .scroll{
     width: 100%;
     height: 100%;
@@ -49,21 +95,21 @@
     line-height: 1.8;
 }
 
-#listacomuni li{
+#listacomuni .item{
     color: #fff;
     background: none;
     text-align: center;
     border: none;
-    margin-top: 20px;
 }
 
-#listacomuni li a{
+#listacomuni .item a{
     font-family: 'Open Sans Bold';
     background: none;
-    font-size: 2.2em;
+    font-size: 1.5em;
     color: #fff;
     display: block;
     text-decoration: none;
+    padding: 20px 0;
 }
 
 #wrapcultura, #wrapcultura .buttonwrap, #headercultura{
@@ -79,16 +125,28 @@
     color: #fff;
 }
 
-#wraptempolibero{
+#wraptempolibero, #headertempolibero{
     background-color: #21928b;
 }
 
-#wrapsalute{
+#headertempolibero a{
+    color: #fff;
+}
+
+#wrapsalute, #headersalute{
     background-color: #ca441a;
 }
 
-#wrapcuriosita{
+#headersalute a{
+    color: #fff;
+}
+
+#wrapcuriosita, #headercuriosita, #wrapcuriosita #comune{
     background-color: #f47d1f;
+}
+
+#headercuriosita a{
+    color: #fff;
 }
 
 #wrapsalute #comune{
@@ -103,17 +161,17 @@
     z-index: 9999;
 }
 
-#wrapcultura .list li{
+#wrapcultura .item{
     border: 1px solid #cd3627;
     border-top: none;
 }
 
-#wrapambiente .list li{
+#wrapambiente .item{
     border: 1px solid #19964f;
     border-top: none;
 }
 
-#wrapsalute .list li{
+#wrapsalute .item{
     border: 1px solid #b23711;
     border-top: none;
 }
@@ -131,7 +189,7 @@
 }
 
 
-#wrapimprenditoriagiovanile .list li{
+#wrapimprenditoriagiovanile .item{
     border: 1px solid #2c83ba;
     border-top: none;
 }
@@ -150,7 +208,7 @@
     background-color: #21928b;
 }
 
-#wraptempolibero .list li{
+#wraptempolibero .item{
     border: 1px solid #16746e;
     border-top: none;
 }
@@ -178,12 +236,16 @@
     color: #fff;
 }
 
-#wrapimprenditoriagiovanile, #wrapimprenditoriagiovanile #comune{
+#wrapimprenditoriagiovanile, #headerimprenditoriagiovanile, #wrapimprenditoriagiovanile #comune{
     background-color: #3a97d3;
     color: #fff;
 }
 
-#wrapimprenditoriagiovanile #listaassociazioni li{
+#headerimprenditoriagiovanile a{
+    color: #fff;
+}
+
+#wrapimprenditoriagiovanile #listaassociazioni .item{
     border: 1px solid #2c83ba;
     border-left: none;
     border-right: none;
@@ -209,8 +271,12 @@
     color:#064f25;
 }
 
-#wrapeventi{
+#wrapeventi, #headereventi{
     background-color: #f29c1f;
+    color: #fff;
+}
+
+#headereventi a{
     color: #fff;
 }
 
@@ -238,16 +304,14 @@
     position: relative;
     z-index: 1000;
     padding-bottom: 5px;
-    height: 120px;
 }
 
-#comune h1{
+#comune h1, #titolosezione h1{
     font-weight: 100;
     color: #fff;
-    font-size: 3.5em;
+    font-size: 3em;
     text-align: center;
     margin: 0px;
-    padding-top: 50px;
 }
 
 .list li{
@@ -264,14 +328,19 @@
     padding: 10px;
 }
 
-.list li .nome{
+#wrapcultura .item .nome{
     font-family: 'Open Sans';
     color: #fff;
     margin-bottom: 2px;
     font-weight: 600;
+    font-size: 1.4em;
 }
 
-.list li .posiz, #wrapcultura #asslocation p{
+.item .posiz{
+    font-size: 1em;
+}
+
+#wrapcultura .item .posiz, #wrapcultura #asslocation p{
     font-weight: 600;
     color: #791307;
 }
@@ -286,16 +355,6 @@
 
 .posiz .ion-location{
     margin-right: 5px;
-}
-
-.list .time{
-    color: #791307;
-    font-weight: 600;
-    display: block;
-}
-
-.list .time i{
-    margin-right: 3px;
 }
 
 .mnitem{
@@ -435,7 +494,7 @@
 }
 
 #map{
-    height: 320px;
+    height: 250px;
     width: 100%;
     position: relative;
 }
@@ -677,22 +736,28 @@
 
 #wrapseyf{
     font-family: 'Open Sans';
-    color: #fff;
-    background-color: #ca222b;
-    background-image: url('../img/seyf.png');
+    color: #333332;
+    background-color: #fff;
+    /*background-image: url('../img/seyf.png');*/
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+#headerseyf, #headerseyf a{
+    color: #fff;
+    background-color: #ca222b;
 }
 
 #seyftitle{
     font-family: 'Open Sans Bold';
     text-align: center;
     font-size: 6em;
-    color: #fff;
+    color: #ca222b;
+    padding: 20px;
 }
 
 .seyfmain{
-    padding: 5px;
+    padding: 5px 20px;
     font-size: 1.2em;
     line-height: 1.4;
     margin-top: 10px;
@@ -701,7 +766,6 @@
 .seyfmain span{
     font-family: 'Open Sans Bold';
     font-size: 1.2em;
-    color: #fff;
     display: block;
     float: left;
     padding-right: 10px;

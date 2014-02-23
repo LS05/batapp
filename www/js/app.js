@@ -1,5 +1,83 @@
 var batApp = angular.module('batapp', ['ionic']);
 
+batApp.factory('dataFactory', function() {
+  var res;
+  var comuni = [ {title: 'Andria'}, {title: 'Trani'} ];
+
+  var associazioni = [
+    { 
+      id: '1',
+      nome: 'Teatro Sospeso',
+      posizione: 'Via Castel del Monte, 80',
+      categoria: 'Cultura',
+      descrizone: ''
+    },
+    { 
+      id: '2',
+      nome: 'Associazione Trani',
+      posizione: 'Via Trani, 54',
+      categoria: 'Cultura',
+      descrizone: ''
+    },
+    { 
+      id: '3',
+      nome: 'Ambiente',
+      posizione: 'Via Trani, 54',
+      descrizone: ''
+    },
+    { 
+      id: '4',
+      nome: 'Imprenditoria Giovanile',
+      posizione: 'Via Trani, 54',
+      descrizone: ''
+    },
+    { 
+      id: '4',
+      nome: 'Tempo Libeo',
+      posizione: 'Via Trani, 54',
+      descrizone: ''
+    },
+    { 
+      id: '4',
+      nome: 'Salute',
+      posizione: 'Via Trani, 54',
+      descrizone: ''
+    }
+
+  ];
+
+  var eventi = [
+    { 
+      id: '1',
+      nome: 'La storia di Andria',
+      posizione: 'Via Castel del Monte, 80',
+      orario: '20:30',
+      idassociazione: '1',
+      descrizone: ''
+    },
+    { 
+      id: '2',
+      nome: 'Associazione Trani',
+      posizione: 'Via Trani, 54',
+      orario: '19:15',
+      idassociazione: '1',
+      descrizone: ''
+    }
+  ];
+
+  return {
+      getData: function(type){
+          if (type == 'associazioni')
+            res = associazioni;
+          else if (type == 'eventi')
+            res = eventi;
+          if (type == 'comuni')
+            res = comuni;
+          return res;
+      }
+  };
+});
+
 batApp.config(function($stateProvider, $urlRouterProvider) {
 
   $stateProvider
@@ -64,7 +142,7 @@ batApp.config(function($stateProvider, $urlRouterProvider) {
       controller: 'mainCtrl'
     })
     .state('evento', {
-      url: "/eventi/:evento",
+      url: "/eventi/:eventoid/:evento",
       templateUrl: "evento.html",
       controller: 'mainCtrl'
     })
@@ -76,7 +154,7 @@ batApp.config(function($stateProvider, $urlRouterProvider) {
     .state('listacuriosita', {
       url: "/curiosita/:comune",
       templateUrl: "listacuriosita.html",
-      controller: 'mainCtrl'
+      controller: 'ListaCuriositaController'
     })
 
 
@@ -160,99 +238,81 @@ batApp.filter('lwnowhitespace', function() {
    }
 });
 
-batApp.controller('CuriositaController', function($scope, $stateParams) {
+batApp.controller('CuriositaController', function($scope, $stateParams, dataFactory) {
+    $scope.comuni = dataFactory.getData('comuni');
     $scope.sezione = "curiosita";
-    $scope.testFunction = function(elem){
-
-      var s = document.getElementById(elem);
-
-      /*for(var i = 0; i < 100; i++) {
-        var li = document.createElement('li');
-        li.className = 'item';
-        li.innerHTML = 'Item ' + i;
-        s.firstElementChild.appendChild(li);
-      }*/
-
-      var scroll = new ionic.views.Scroll({
-        el: s
-      });
-
-
-
-    };
-
-    $scope.doTheBack = function() {
-      window.history.back();
-    };
-
+    $scope.titleListCur = "Scegli un Comune"
 });
 
-batApp.controller('SezioneController', function($scope, $stateParams) {
+batApp.controller('ListaCuriositaController', function($scope, $stateParams, dataFactory) {
+    $scope.comune = $stateParams.comune;
+    $scope.comuni = dataFactory.getData('comuni');
+    $scope.associazioni = dataFactory.getData('associazioni');
+});
+
+batApp.controller('SezioneController', function($scope, $stateParams, $state, dataFactory) {
+    $scope.comuni = dataFactory.getData('comuni');
     $scope.sezione = $stateParams.sezione;
-    $scope.testFunction = function(elem){
+    $scope.titleSezione = "Scegli un Comune"
+ });
 
-      var s = document.getElementById(elem);
-
-      /*for(var i = 0; i < 100; i++) {
-        var li = document.createElement('li');
-        li.className = 'item';
-        li.innerHTML = 'Item ' + i;
-        s.firstElementChild.appendChild(li);
-      }*/
-
-      var scroll = new ionic.views.Scroll({
-        el: s
-      });
-
-
-
-    };
-
-});
-
-batApp.controller('ImpGiovController', function($scope, $stateParams) {
+batApp.controller('ImpGiovController', function($scope, $stateParams, dataFactory) {
     $scope.sezione = 'imprenditoriagiovanile';
     $scope.titolo = 'Imprenditoria Giovanile';
+    $scope.titleSezione = "Scegli un Comune"
+    $scope.comuni = dataFactory.getData('comuni');
+    console.log($scope.comuni);
 });
 
-batApp.controller('TempLibController', function($scope, $stateParams) {
+batApp.controller('TempLibController', function($scope, $stateParams, dataFactory) {
     $scope.sezione = 'tempolibero';
     $scope.titolo = 'Tempo Libero';
+    $scope.comuni = dataFactory.getData('comuni');
 });
 
-batApp.controller('ListaComController', function($scope, $stateParams) {
+batApp.controller('ListaComController', function($scope, $stateParams, dataFactory) {
     $scope.comune = $stateParams.comune;
     $scope.sezione = $stateParams.sezione;
+    $scope.titoloLista = "Associazioni";
+    $scope.associazioni = dataFactory.getData('associazioni');
 
     $scope.openLeft = function() {
       $scope.sideMenuController.toggleRight();
     };
 });
 
-batApp.controller('ListaImpGiovController', function($scope, $stateParams) {
+batApp.controller('ListaImpGiovController', function($scope, $stateParams, dataFactory) {
     $scope.comune = $stateParams.comune;
     $scope.sezione = 'imprenditoriagiovanile';
     $scope.titolo = 'Imprenditoria Giovanile';
+    $scope.associazioni = dataFactory.getData('associazioni');
+    $scope.titoloLista = "Associazioni";
 });
 
-batApp.controller('AssociazioneController', function($scope, $stateParams) {
+batApp.controller('AssociazioneController', function($scope, $stateParams, dataFactory) {
     $scope.sezione = $stateParams.sezione;
     $scope.comune = $stateParams.comune;
     $scope.associazione = $stateParams.associazione;
+    $scope.associazioni = dataFactory.getData('associazioni');
     $scope.idass = $stateParams.idass;
     $scope.address = "Andria, Puglia, Italy";
+    $scope.titleAss = "Associazione";
+    console.log($scope);
 });
 
 batApp.controller('InfoController', function($scope, $stateParams) {
   $scope.sezione = $stateParams.sezione;
   $scope.associazione = $stateParams.associazione;
+  $scope.infoTitle = "Info Associazione"
 });
 
-batApp.controller('EventiAssController', function($scope, $stateParams) {
+batApp.controller('EventiAssController', function($scope, $stateParams, dataFactory) {
   $scope.sezione = $stateParams.sezione;
   $scope.comune = $stateParams.comune;
   $scope.associazione = $stateParams.associazione;
   $scope.idass = $stateParams.idass;
+  $scope.eventi = dataFactory.getData('eventi');
+  $scope.titleEventi = "Eventi";
 });
 
 batApp.controller('EventoAssController', function($scope, $stateParams) {
@@ -260,9 +320,10 @@ batApp.controller('EventoAssController', function($scope, $stateParams) {
     $scope.comune = $stateParams.comune;
     $scope.associazione = $stateParams.associazione;
     $scope.idass = $stateParams.idass;
+    $scope.address = "Andria, Puglia, Italy";
 });
 
-batApp.controller('mainCtrl', function($scope, $ionicPlatform, $state) {
+batApp.controller('mainCtrl', function($scope, $ionicPlatform, $state, dataFactory) {
 
   $scope.changeView = function(view){
     $state.go(view); // path not hash
@@ -279,6 +340,10 @@ batApp.controller('mainCtrl', function($scope, $ionicPlatform, $state) {
 
   $scope.espActive = true;
   $scope.clActive = false;
+
+  $scope.eventi = dataFactory.getData('eventi');
+  $scope.comuni = dataFactory.getData('comuni');
+  $scope.associazioni = dataFactory.getData('associazioni');
 
   $scope.espandi = function(){
     $scope.espActive = !$scope.espActive;
@@ -301,43 +366,5 @@ batApp.controller('mainCtrl', function($scope, $ionicPlatform, $state) {
   $scope.doTheBack = function() {
       window.history.back();
   };
-
-  $scope.comuni = [
-    { title: 'Andria' },
-    { title: 'Trani'}
-  ];
-
-  $scope.associazioni = [
-    { 
-      id: '1',
-      nome: 'Teatro Sospeso',
-      posizione: 'Via Castel del Monte, 80',
-      descrizone: ''
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Trani',
-      posizione: 'Via Trani, 54',
-      descrizone: ''
-    }
-  ];
-
-  $scope.eventi = [
-    { 
-      id: '1',
-      nome: 'La storia di Andria',
-      posizione: 'Via Castel del Monte, 80',
-      orario: '20:30',
-      idassociazione: '1',
-      descrizone: ''
-    },
-    { 
-      id: '2',
-      nome: 'Associazione Trani',
-      posizione: 'Via Trani, 54',
-      idassociazione: '1',
-      descrizone: ''
-    }
-  ];
 
 });
