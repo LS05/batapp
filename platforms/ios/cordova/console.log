@@ -2219,3 +2219,9 @@ Terminating in response to SpringBoard's termination.
 2014-02-23 20:46:05.427 BATApp[12968:a0b] [CDVTimer][TotalPluginStartup] 17.240047ms
 2014-02-23 20:46:05.496 BATApp[12968:a0b] Resetting plugins due to page load.
 2014-02-23 20:46:07.721 BATApp[12968:a0b] Finished load of: file:///Users/lucasuriano/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/90515A6F-E0E3-4642-BAAC-32567792BA93/BATApp.app/www/index.html#/home
+2014-02-24 11:13:46.267 BATApp[1459:a0b] Multi-tasking -> Device: YES, App: YES
+2014-02-24 11:13:46.787 BATApp[1459:a0b] Unlimited access to network resources
+2014-02-24 11:13:48.626 BATApp[1459:a0b] [CDVTimer][statusbar] 215.613008ms
+2014-02-24 11:13:48.627 BATApp[1459:a0b] [CDVTimer][TotalPluginStartup] 216.317058ms
+2014-02-24 11:13:48.902 BATApp[1459:a0b] Resetting plugins due to page load.
+2014-02-24 11:13:51.932 BATApp[1459:a0b] Finished load of: file:///Users/lucasuriano/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/90515A6F-E0E3-4642-BAAC-32567792BA93/BATApp.app/www/index.html#/home
